@@ -42,8 +42,8 @@ models:
       +materialized: view
       +schema: marts
       finance:
-        +tags:finance
+        +tags:["finance"]
       marketing:     
-        +tags: marketing             
+        +tags: ["marketing"]             
 seeds:
     +schema: landing      
