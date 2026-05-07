@@ -73,3 +73,14 @@ There are 6 unused configuration paths:
 [0m18:46:30.314907 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000017F2C1D7830>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000017F2C718200>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000017F2C718170>]}
 [0m18:46:30.314907 [debug] [MainThread]: Flushing usage events
 [0m18:46:32.211693 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m20:26:00.255028 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000021E36C92DE0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000021E36277EF0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000021E3663E7E0>]}
+
+
+============================== 20:26:00.271041 | a69fba76-9f2d-46ae-a42f-ad03a0965c9e ==============================
+[0m20:26:00.271041 [info ] [MainThread]: Running with dbt=1.11.7
+[0m20:26:00.273022 [debug] [MainThread]: running dbt with arguments {'static_parser': 'True', 'no_print': 'None', 'version_check': 'True', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'target_path': 'None', 'printer_width': '80', 'write_json': 'True', 'introspect': 'True', 'log_cache_events': 'False', 'empty': 'None', 'cache_selected_only': 'False', 'log_format': 'default', 'debug': 'False', 'fail_fast': 'False', 'partial_parse': 'True', 'send_anonymous_usage_stats': 'True', 'quiet': 'False', 'warn_error': 'None', 'profiles_dir': 'C:\\Users\\fdani\\.dbt', 'use_colors': 'True', 'invocation_command': 'dbt clean', 'indirect_selection': 'eager', 'use_experimental_parser': 'False', 'log_path': 'C:\\Users\\fdani\\project_shoesbr\\logs'}
+[0m20:26:00.770462 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': 'a69fba76-9f2d-46ae-a42f-ad03a0965c9e', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000021E38708A70>]}
+[0m20:26:00.881780 [debug] [MainThread]: Command `dbt clean` succeeded at 20:26:00.880775 after 1.08 seconds
+[0m20:26:00.882777 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000021E343C6B40>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000021E387B3500>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000021E387B26F0>]}
+[0m20:26:00.883828 [debug] [MainThread]: Flushing usage events
+[0m20:26:02.703223 [debug] [MainThread]: An error was encountered while trying to flush usage events
