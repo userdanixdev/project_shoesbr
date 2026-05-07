@@ -1,9 +1,9 @@
-## O source quer dizer quais são as fontes de dados:
+# O source quer dizer quais são as fontes de dados:
 
 version: 2
 sources:
     - name: landing
-      database: shoesBR
+      database: shoesbr
       schema: landing
       tables:
         - name: clientes
