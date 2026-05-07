@@ -42,3 +42,34 @@ Runtime Error
 [0m17:32:57.957246 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001B27DC92CF0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001B27E28CAA0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001B27DF247A0>]}
 [0m17:32:57.958245 [debug] [MainThread]: Flushing usage events
 [0m17:32:59.542687 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m18:46:23.645804 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000017F2C718170>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000017F29039520>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000017F2C84E810>]}
+
+
+============================== 18:46:23.662104 | b3f6590f-3366-4ee6-a184-a7cce48b0b45 ==============================
+[0m18:46:23.662104 [info ] [MainThread]: Running with dbt=1.11.7
+[0m18:46:23.665144 [debug] [MainThread]: running dbt with arguments {'static_parser': 'True', 'no_print': 'None', 'version_check': 'True', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'target_path': 'None', 'printer_width': '80', 'write_json': 'True', 'empty': 'None', 'log_cache_events': 'False', 'introspect': 'True', 'cache_selected_only': 'False', 'log_format': 'default', 'debug': 'False', 'fail_fast': 'False', 'partial_parse': 'True', 'send_anonymous_usage_stats': 'True', 'quiet': 'False', 'warn_error': 'None', 'profiles_dir': 'C:\\Users\\fdani\\.dbt', 'use_colors': 'True', 'invocation_command': 'dbt ls', 'indirect_selection': 'eager', 'use_experimental_parser': 'False', 'log_path': 'C:\\Users\\fdani\\project_shoesbr\\logs'}
+[0m18:46:24.672247 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': 'b3f6590f-3366-4ee6-a184-a7cce48b0b45', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000017F2DDC8C50>]}
+[0m18:46:24.863105 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': 'b3f6590f-3366-4ee6-a184-a7cce48b0b45', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000017F2CA0FF20>]}
+[0m18:46:24.868103 [info ] [MainThread]: Registered adapter: postgres=1.10.0
+[0m18:46:25.815098 [debug] [MainThread]: checksum: b80718358155fc17c3559352095564dd56ada1cc1a1c0ef2e62c857e71583775, vars: {}, profile: , target: , version: 1.11.7
+[0m18:46:25.818098 [info ] [MainThread]: Unable to do partial parsing because saved manifest not found. Starting full parse.
+[0m18:46:25.820099 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'partial_parser', 'label': 'b3f6590f-3366-4ee6-a184-a7cce48b0b45', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000017F2E18F020>]}
+[0m18:46:30.045261 [warn ] [MainThread]: [[33mWARNING[0m]: Configuration paths exist in your dbt_project.yml file which do not apply to any resources.
+There are 6 unused configuration paths:
+- models.shoesbr.staging
+- models.shoesbr.marts
+- models.shoesbr.marts.marketing
+- models.shoesbr.intermediate
+- models.shoesbr.marts.finance
+- seeds.shoesbr
+[0m18:46:30.068249 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': 'b3f6590f-3366-4ee6-a184-a7cce48b0b45', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000017F2E18E630>]}
+[0m18:46:30.199454 [debug] [MainThread]: Wrote artifact WritableManifest to C:\Users\fdani\project_shoesbr\target\manifest.json
+[0m18:46:30.231522 [debug] [MainThread]: Wrote artifact SemanticManifest to C:\Users\fdani\project_shoesbr\target\semantic_manifest.json
+[0m18:46:30.314907 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': 'b3f6590f-3366-4ee6-a184-a7cce48b0b45', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000017F2E4B5970>]}
+[0m18:46:30.314907 [info ] [MainThread]: Found 465 macros
+[0m18:46:30.314907 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': 'b3f6590f-3366-4ee6-a184-a7cce48b0b45', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000017F2E18ECF0>]}
+[0m18:46:30.314907 [warn ] [MainThread]: No nodes selected!
+[0m18:46:30.314907 [debug] [MainThread]: Command `dbt ls` succeeded at 18:46:30.314907 after 7.11 seconds
+[0m18:46:30.314907 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000017F2C1D7830>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000017F2C718200>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000017F2C718170>]}
+[0m18:46:30.314907 [debug] [MainThread]: Flushing usage events
+[0m18:46:32.211693 [debug] [MainThread]: An error was encountered while trying to flush usage events
