@@ -47,4 +47,5 @@ models:
       marketing:     
         +tags: ["marketing"]             
 seeds:
+  shoesbr:
     +schema: landing      
