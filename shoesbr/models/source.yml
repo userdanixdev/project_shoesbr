@@ -3,7 +3,6 @@
 version: 2
 sources:
     - name: landing
-      database: shoesbr
       schema: landing
       tables:
         - name: clientes
