@@ -197,3 +197,434 @@ There are 5 unused configuration paths:
 [0m21:04:50.450537 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000219CCE805F0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000219CD7E5850>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000219CD4581A0>]}
 [0m21:04:50.451536 [debug] [MainThread]: Flushing usage events
 [0m21:04:51.803977 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m17:23:13.737648 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000231500F9160>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000231502790D0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000023153276840>]}
+
+
+============================== 17:23:13.753442 | 58db450d-7e3b-4b1e-96e6-6687262825dd ==============================
+[0m17:23:13.753442 [info ] [MainThread]: Running with dbt=1.11.7
+[0m17:23:13.755500 [debug] [MainThread]: running dbt with arguments {'static_parser': 'True', 'no_print': 'None', 'version_check': 'True', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'target_path': 'None', 'printer_width': '80', 'write_json': 'True', 'empty': 'None', 'log_cache_events': 'False', 'introspect': 'True', 'cache_selected_only': 'False', 'log_format': 'default', 'debug': 'False', 'fail_fast': 'False', 'profiles_dir': 'C:\\Users\\fdani\\.dbt', 'send_anonymous_usage_stats': 'True', 'quiet': 'False', 'warn_error': 'None', 'partial_parse': 'True', 'indirect_selection': 'eager', 'use_colors': 'True', 'invocation_command': 'dbt docs serve', 'use_experimental_parser': 'False', 'log_path': 'C:\\Users\\fdani\\project_shoesbr\\logs'}
+[0m17:23:14.663507 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '58db450d-7e3b-4b1e-96e6-6687262825dd', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000023152DD78C0>]}
+[0m17:23:14.865393 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': '58db450d-7e3b-4b1e-96e6-6687262825dd', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002315373ED50>]}
+[0m17:24:49.526714 [error] [MainThread]: Encountered an error:
+
+[0m17:24:49.545494 [error] [MainThread]: Traceback (most recent call last):
+  File "C:\Users\fdani\project_shoesbr\.venv\Lib\site-packages\dbt\cli\requires.py", line 182, in wrapper
+    result, success = func(*args, **kwargs)
+                      ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\fdani\project_shoesbr\.venv\Lib\site-packages\dbt\cli\requires.py", line 128, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\fdani\project_shoesbr\.venv\Lib\site-packages\dbt\cli\requires.py", line 276, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\fdani\project_shoesbr\.venv\Lib\site-packages\dbt\cli\requires.py", line 321, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\fdani\project_shoesbr\.venv\Lib\site-packages\dbt\cli\requires.py", line 368, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\fdani\project_shoesbr\.venv\Lib\site-packages\dbt\cli\main.py", line 307, in docs_serve
+    results = task.run()
+              ^^^^^^^^^^
+  File "C:\Users\fdani\project_shoesbr\.venv\Lib\site-packages\dbt\task\docs\serve.py", line 29, in run
+    httpd.serve_forever()
+  File "C:\Users\fdani\AppData\Local\Programs\Python\Python312\Lib\socketserver.py", line 235, in serve_forever
+    ready = selector.select(poll_interval)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\fdani\AppData\Local\Programs\Python\Python312\Lib\selectors.py", line 323, in select
+    r, w, _ = self._select(self._readers, self._writers, [], timeout)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\fdani\AppData\Local\Programs\Python\Python312\Lib\selectors.py", line 314, in _select
+    r, w, x = select.select(r, w, w, timeout)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+KeyboardInterrupt
+
+[0m17:24:49.560475 [debug] [MainThread]: Command `dbt docs serve` failed at 17:24:49.556479 after 96.27 seconds
+[0m17:24:49.565470 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000231500F9160>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000231554738C0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000231554CD190>]}
+[0m17:24:49.567470 [debug] [MainThread]: Flushing usage events
+[0m17:24:50.979281 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m17:25:00.718166 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000202B916C6B0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000202B5A8CD10>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000202B916E720>]}
+
+
+============================== 17:25:00.737636 | af666e8e-96b0-4ec8-ad45-e80ab2697290 ==============================
+[0m17:25:00.737636 [info ] [MainThread]: Running with dbt=1.11.7
+[0m17:25:00.739634 [debug] [MainThread]: running dbt with arguments {'version_check': 'True', 'no_print': 'None', 'static_parser': 'True', 'target_path': 'None', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'printer_width': '80', 'write_json': 'True', 'empty': 'None', 'log_cache_events': 'False', 'introspect': 'True', 'cache_selected_only': 'False', 'log_format': 'default', 'debug': 'False', 'fail_fast': 'False', 'partial_parse': 'True', 'send_anonymous_usage_stats': 'True', 'quiet': 'False', 'warn_error': 'None', 'profiles_dir': 'C:\\Users\\fdani\\.dbt', 'indirect_selection': 'eager', 'invocation_command': 'dbt docs serve', 'use_colors': 'True', 'use_experimental_parser': 'False', 'log_path': 'C:\\Users\\fdani\\project_shoesbr\\logs'}
+[0m17:25:01.358696 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': 'af666e8e-96b0-4ec8-ad45-e80ab2697290', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000202BA7D1EE0>]}
+[0m17:25:01.597646 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': 'af666e8e-96b0-4ec8-ad45-e80ab2697290', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000202BABD42F0>]}
+[0m17:26:54.022852 [error] [MainThread]: Encountered an error:
+
+[0m17:26:54.036888 [error] [MainThread]: Traceback (most recent call last):
+  File "C:\Users\fdani\project_shoesbr\.venv\Lib\site-packages\dbt\cli\requires.py", line 182, in wrapper
+    result, success = func(*args, **kwargs)
+                      ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\fdani\project_shoesbr\.venv\Lib\site-packages\dbt\cli\requires.py", line 128, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\fdani\project_shoesbr\.venv\Lib\site-packages\dbt\cli\requires.py", line 276, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\fdani\project_shoesbr\.venv\Lib\site-packages\dbt\cli\requires.py", line 321, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\fdani\project_shoesbr\.venv\Lib\site-packages\dbt\cli\requires.py", line 368, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\fdani\project_shoesbr\.venv\Lib\site-packages\dbt\cli\main.py", line 307, in docs_serve
+    results = task.run()
+              ^^^^^^^^^^
+  File "C:\Users\fdani\project_shoesbr\.venv\Lib\site-packages\dbt\task\docs\serve.py", line 29, in run
+    httpd.serve_forever()
+  File "C:\Users\fdani\AppData\Local\Programs\Python\Python312\Lib\socketserver.py", line 235, in serve_forever
+    ready = selector.select(poll_interval)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\fdani\AppData\Local\Programs\Python\Python312\Lib\selectors.py", line 323, in select
+    r, w, _ = self._select(self._readers, self._writers, [], timeout)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\fdani\AppData\Local\Programs\Python\Python312\Lib\selectors.py", line 314, in _select
+    r, w, x = select.select(r, w, w, timeout)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+KeyboardInterrupt
+
+[0m17:26:54.045858 [debug] [MainThread]: Command `dbt docs serve` failed at 17:26:54.043849 after 113.72 seconds
+[0m17:26:54.049847 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000202B9789760>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000202BADB2A80>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000202B8A47320>]}
+[0m17:26:54.053853 [debug] [MainThread]: Flushing usage events
+[0m17:26:55.422241 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m17:28:31.548424 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000024323E2F530>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002432429B530>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000024324299580>]}
+
+
+============================== 17:28:31.554128 | 1a5ab37c-c609-4555-af32-13be86013488 ==============================
+[0m17:28:31.554128 [info ] [MainThread]: Running with dbt=1.11.7
+[0m17:28:31.554128 [debug] [MainThread]: running dbt with arguments {'static_parser': 'True', 'no_print': 'None', 'version_check': 'True', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'target_path': 'None', 'printer_width': '80', 'write_json': 'True', 'introspect': 'True', 'log_cache_events': 'False', 'empty': 'False', 'cache_selected_only': 'False', 'log_format': 'default', 'debug': 'False', 'fail_fast': 'False', 'partial_parse': 'True', 'send_anonymous_usage_stats': 'True', 'quiet': 'False', 'warn_error': 'None', 'profiles_dir': 'C:\\Users\\fdani\\.dbt', 'indirect_selection': 'eager', 'invocation_command': 'dbt run', 'use_colors': 'True', 'use_experimental_parser': 'False', 'log_path': 'C:\\Users\\fdani\\project_shoesbr\\logs'}
+[0m17:28:32.042376 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '1a5ab37c-c609-4555-af32-13be86013488', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002432614FFE0>]}
+[0m17:28:32.212278 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': '1a5ab37c-c609-4555-af32-13be86013488', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000024324F3BC20>]}
+[0m17:28:32.215702 [info ] [MainThread]: Registered adapter: postgres=1.10.0
+[0m17:28:33.020939 [debug] [MainThread]: checksum: b80718358155fc17c3559352095564dd56ada1cc1a1c0ef2e62c857e71583775, vars: {}, profile: , target: , version: 1.11.7
+[0m17:28:35.230378 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 0 files added, 0 files changed.
+[0m17:28:35.230378 [debug] [MainThread]: Nothing changed, skipping partial parsing.
+[0m17:28:35.230378 [debug] [MainThread]: Partial parsing enabled, no changes found, skipping parsing
+[0m17:28:35.245998 [warn ] [MainThread]: [[33mWARNING[0m]: Configuration paths exist in your dbt_project.yml file which do not apply to any resources.
+There are 5 unused configuration paths:
+- models.shoesbr.marts.finance
+- models.shoesbr.marts
+- models.shoesbr.staging
+- models.shoesbr.marts.marketing
+- models.shoesbr.intermediate
+[0m17:28:35.311976 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': '1a5ab37c-c609-4555-af32-13be86013488', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000243248B70B0>]}
+[0m17:28:35.438765 [debug] [MainThread]: Wrote artifact WritableManifest to C:\Users\fdani\project_shoesbr\target\manifest.json
+[0m17:28:35.467161 [debug] [MainThread]: Wrote artifact SemanticManifest to C:\Users\fdani\project_shoesbr\target\semantic_manifest.json
+[0m17:28:35.537405 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': '1a5ab37c-c609-4555-af32-13be86013488', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000243268081D0>]}
+[0m17:28:35.538406 [info ] [MainThread]: Found 1 seed, 466 macros
+[0m17:28:35.539847 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '1a5ab37c-c609-4555-af32-13be86013488', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000243267B3F20>]}
+[0m17:28:35.543854 [warn ] [MainThread]: Nothing to do. Try checking your model configs and model specification args
+[0m17:28:35.549875 [debug] [MainThread]: Command end result
+[0m17:28:35.597847 [debug] [MainThread]: Wrote artifact WritableManifest to C:\Users\fdani\project_shoesbr\target\manifest.json
+[0m17:28:35.605358 [debug] [MainThread]: Wrote artifact SemanticManifest to C:\Users\fdani\project_shoesbr\target\semantic_manifest.json
+[0m17:28:35.613358 [debug] [MainThread]: Wrote artifact RunExecutionResult to C:\Users\fdani\project_shoesbr\target\run_results.json
+[0m17:28:35.615356 [debug] [MainThread]: Command `dbt run` succeeded at 17:28:35.615356 after 4.33 seconds
+[0m17:28:35.617355 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000024323E2F530>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000024324DA9910>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000024320A72F00>]}
+[0m17:28:35.618354 [debug] [MainThread]: Flushing usage events
+[0m17:28:36.983377 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m17:28:47.467446 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000024A6925BDA0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000024A68A9ED50>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000024A68A9FD70>]}
+
+
+============================== 17:28:47.478875 | f208b572-f354-4206-9918-cffdc9ccab15 ==============================
+[0m17:28:47.478875 [info ] [MainThread]: Running with dbt=1.11.7
+[0m17:28:47.481356 [debug] [MainThread]: running dbt with arguments {'static_parser': 'True', 'no_print': 'None', 'version_check': 'True', 'target_path': 'None', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'printer_width': '80', 'write_json': 'True', 'empty': 'None', 'log_cache_events': 'False', 'introspect': 'True', 'cache_selected_only': 'False', 'fail_fast': 'False', 'debug': 'False', 'log_format': 'default', 'partial_parse': 'True', 'send_anonymous_usage_stats': 'True', 'quiet': 'False', 'warn_error': 'None', 'profiles_dir': 'C:\\Users\\fdani\\.dbt', 'indirect_selection': 'eager', 'use_colors': 'True', 'invocation_command': 'dbt docs serve', 'use_experimental_parser': 'False', 'log_path': 'C:\\Users\\fdani\\project_shoesbr\\logs'}
+[0m17:28:47.964388 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': 'f208b572-f354-4206-9918-cffdc9ccab15', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000024A65F253A0>]}
+[0m17:28:48.137288 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': 'f208b572-f354-4206-9918-cffdc9ccab15', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000024A685583E0>]}
+[0m17:29:53.829686 [error] [MainThread]: Encountered an error:
+
+[0m17:29:53.847575 [error] [MainThread]: Traceback (most recent call last):
+  File "C:\Users\fdani\project_shoesbr\.venv\Lib\site-packages\dbt\cli\requires.py", line 182, in wrapper
+    result, success = func(*args, **kwargs)
+                      ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\fdani\project_shoesbr\.venv\Lib\site-packages\dbt\cli\requires.py", line 128, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\fdani\project_shoesbr\.venv\Lib\site-packages\dbt\cli\requires.py", line 276, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\fdani\project_shoesbr\.venv\Lib\site-packages\dbt\cli\requires.py", line 321, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\fdani\project_shoesbr\.venv\Lib\site-packages\dbt\cli\requires.py", line 368, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\fdani\project_shoesbr\.venv\Lib\site-packages\dbt\cli\main.py", line 307, in docs_serve
+    results = task.run()
+              ^^^^^^^^^^
+  File "C:\Users\fdani\project_shoesbr\.venv\Lib\site-packages\dbt\task\docs\serve.py", line 29, in run
+    httpd.serve_forever()
+  File "C:\Users\fdani\AppData\Local\Programs\Python\Python312\Lib\socketserver.py", line 235, in serve_forever
+    ready = selector.select(poll_interval)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\fdani\AppData\Local\Programs\Python\Python312\Lib\selectors.py", line 323, in select
+    r, w, _ = self._select(self._readers, self._writers, [], timeout)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\fdani\AppData\Local\Programs\Python\Python312\Lib\selectors.py", line 314, in _select
+    r, w, x = select.select(r, w, w, timeout)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+KeyboardInterrupt
+
+[0m17:29:53.860418 [debug] [MainThread]: Command `dbt docs serve` failed at 17:29:53.858418 after 66.65 seconds
+[0m17:29:53.864451 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000024A68DB58B0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000024A6A46A1E0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000024A6A25FE00>]}
+[0m17:29:53.866420 [debug] [MainThread]: Flushing usage events
+[0m17:29:55.552162 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m17:31:03.224872 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001E2F04D37D0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001E2F0BA7B60>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001E2F0BA7B30>]}
+
+
+============================== 17:31:03.237777 | cd7fc5ea-d39d-4165-ac1a-b051c8fa12f9 ==============================
+[0m17:31:03.237777 [info ] [MainThread]: Running with dbt=1.11.7
+[0m17:31:03.240085 [debug] [MainThread]: running dbt with arguments {'static_parser': 'True', 'no_print': 'None', 'version_check': 'True', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'target_path': 'None', 'printer_width': '80', 'write_json': 'True', 'empty': 'None', 'log_cache_events': 'False', 'introspect': 'True', 'cache_selected_only': 'False', 'fail_fast': 'False', 'debug': 'False', 'log_format': 'default', 'profiles_dir': 'C:\\Users\\fdani\\.dbt', 'send_anonymous_usage_stats': 'True', 'quiet': 'False', 'warn_error': 'None', 'partial_parse': 'True', 'invocation_command': 'dbt clean', 'use_colors': 'True', 'indirect_selection': 'eager', 'use_experimental_parser': 'False', 'log_path': 'C:\\Users\\fdani\\project_shoesbr\\logs'}
+[0m17:31:03.634942 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': 'cd7fc5ea-d39d-4165-ac1a-b051c8fa12f9', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001E2F0C49B80>]}
+[0m17:31:03.704397 [debug] [MainThread]: Command `dbt clean` succeeded at 17:31:03.704397 after 0.75 seconds
+[0m17:31:03.706395 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001E2F05DFFE0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001E2F05DFF50>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001E2EDEFD220>]}
+[0m17:31:03.712395 [debug] [MainThread]: Flushing usage events
+[0m17:31:05.125852 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m17:31:21.472274 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000014882C341D0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001488541FDA0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001488233CBF0>]}
+
+
+============================== 17:31:21.485859 | ff00c724-21b2-44b2-acfb-0b3d4f638b40 ==============================
+[0m17:31:21.485859 [info ] [MainThread]: Running with dbt=1.11.7
+[0m17:31:21.488221 [debug] [MainThread]: running dbt with arguments {'version_check': 'True', 'no_print': 'None', 'static_parser': 'True', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'target_path': 'None', 'printer_width': '80', 'write_json': 'True', 'introspect': 'True', 'log_cache_events': 'False', 'empty': 'False', 'cache_selected_only': 'False', 'log_format': 'default', 'debug': 'False', 'fail_fast': 'False', 'partial_parse': 'True', 'send_anonymous_usage_stats': 'True', 'quiet': 'False', 'warn_error': 'None', 'profiles_dir': 'C:\\Users\\fdani\\.dbt', 'invocation_command': 'dbt run', 'use_colors': 'True', 'indirect_selection': 'eager', 'use_experimental_parser': 'False', 'log_path': 'C:\\Users\\fdani\\project_shoesbr\\logs'}
+[0m17:31:21.999988 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': 'ff00c724-21b2-44b2-acfb-0b3d4f638b40', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000148854484D0>]}
+[0m17:31:22.195876 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': 'ff00c724-21b2-44b2-acfb-0b3d4f638b40', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000014885FC8470>]}
+[0m17:31:22.198721 [info ] [MainThread]: Registered adapter: postgres=1.10.0
+[0m17:31:22.858500 [debug] [MainThread]: checksum: b80718358155fc17c3559352095564dd56ada1cc1a1c0ef2e62c857e71583775, vars: {}, profile: , target: , version: 1.11.7
+[0m17:31:22.860498 [info ] [MainThread]: Unable to do partial parsing because saved manifest not found. Starting full parse.
+[0m17:31:22.861670 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'partial_parser', 'label': 'ff00c724-21b2-44b2-acfb-0b3d4f638b40', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000148875EB800>]}
+[0m17:31:25.612824 [warn ] [MainThread]: [[33mWARNING[0m]: Configuration paths exist in your dbt_project.yml file which do not apply to any resources.
+There are 5 unused configuration paths:
+- models.shoesbr.staging
+- models.shoesbr.marts.finance
+- models.shoesbr.marts
+- models.shoesbr.intermediate
+- models.shoesbr.marts.marketing
+[0m17:31:25.625816 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': 'ff00c724-21b2-44b2-acfb-0b3d4f638b40', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000148879C9340>]}
+[0m17:31:25.775733 [debug] [MainThread]: Wrote artifact WritableManifest to C:\Users\fdani\project_shoesbr\target\manifest.json
+[0m17:31:25.781501 [debug] [MainThread]: Wrote artifact SemanticManifest to C:\Users\fdani\project_shoesbr\target\semantic_manifest.json
+[0m17:31:25.845699 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': 'ff00c724-21b2-44b2-acfb-0b3d4f638b40', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000148870788F0>]}
+[0m17:31:25.846702 [info ] [MainThread]: Found 1 seed, 466 macros
+[0m17:31:25.847724 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': 'ff00c724-21b2-44b2-acfb-0b3d4f638b40', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000014886078C50>]}
+[0m17:31:25.852695 [warn ] [MainThread]: Nothing to do. Try checking your model configs and model specification args
+[0m17:31:25.855029 [debug] [MainThread]: Command end result
+[0m17:31:25.911996 [debug] [MainThread]: Wrote artifact WritableManifest to C:\Users\fdani\project_shoesbr\target\manifest.json
+[0m17:31:25.917992 [debug] [MainThread]: Wrote artifact SemanticManifest to C:\Users\fdani\project_shoesbr\target\semantic_manifest.json
+[0m17:31:25.927083 [debug] [MainThread]: Wrote artifact RunExecutionResult to C:\Users\fdani\project_shoesbr\target\run_results.json
+[0m17:31:25.930082 [debug] [MainThread]: Command `dbt run` succeeded at 17:31:25.929083 after 4.72 seconds
+[0m17:31:25.931082 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000014885B69070>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000014885F7EF00>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000014885F7E930>]}
+[0m17:31:25.932077 [debug] [MainThread]: Flushing usage events
+[0m17:31:27.503404 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m18:12:04.712140 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002C7A1827EF0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002C7A1825B20>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002C7A1E0BD40>]}
+
+
+============================== 18:12:04.729110 | 07c75bfe-4abc-4c05-9d4a-eba566fa2128 ==============================
+[0m18:12:04.729110 [info ] [MainThread]: Running with dbt=1.11.7
+[0m18:12:04.731115 [debug] [MainThread]: running dbt with arguments {'version_check': 'True', 'no_print': 'None', 'static_parser': 'True', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'target_path': 'None', 'printer_width': '80', 'write_json': 'True', 'empty': 'None', 'log_cache_events': 'False', 'introspect': 'True', 'cache_selected_only': 'False', 'fail_fast': 'False', 'debug': 'False', 'log_format': 'default', 'partial_parse': 'True', 'send_anonymous_usage_stats': 'True', 'quiet': 'False', 'warn_error': 'None', 'profiles_dir': 'C:\\Users\\fdani\\.dbt', 'invocation_command': 'dbt docs generate', 'indirect_selection': 'eager', 'use_colors': 'True', 'use_experimental_parser': 'False', 'log_path': 'C:\\Users\\fdani\\project_shoesbr\\logs'}
+[0m18:12:05.584511 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '07c75bfe-4abc-4c05-9d4a-eba566fa2128', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002C7A32090A0>]}
+[0m18:12:05.752511 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': '07c75bfe-4abc-4c05-9d4a-eba566fa2128', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002C7A2EBF6E0>]}
+[0m18:12:05.755510 [info ] [MainThread]: Registered adapter: postgres=1.10.0
+[0m18:12:06.602112 [debug] [MainThread]: checksum: b80718358155fc17c3559352095564dd56ada1cc1a1c0ef2e62c857e71583775, vars: {}, profile: , target: , version: 1.11.7
+[0m18:12:07.362247 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 0 files added, 0 files changed.
+[0m18:12:07.363247 [debug] [MainThread]: Nothing changed, skipping partial parsing.
+[0m18:12:07.363247 [debug] [MainThread]: Partial parsing enabled, no changes found, skipping parsing
+[0m18:12:07.377239 [warn ] [MainThread]: [[33mWARNING[0m]: Configuration paths exist in your dbt_project.yml file which do not apply to any resources.
+There are 5 unused configuration paths:
+- models.shoesbr.marts
+- models.shoesbr.marts.finance
+- models.shoesbr.marts.marketing
+- models.shoesbr.intermediate
+- models.shoesbr.staging
+[0m18:12:07.429311 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': '07c75bfe-4abc-4c05-9d4a-eba566fa2128', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002C7A3321760>]}
+[0m18:12:07.515364 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': '07c75bfe-4abc-4c05-9d4a-eba566fa2128', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002C7A3679190>]}
+[0m18:12:07.517364 [info ] [MainThread]: Found 1 seed, 466 macros
+[0m18:12:07.518366 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '07c75bfe-4abc-4c05-9d4a-eba566fa2128', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002C7A3580560>]}
+[0m18:12:07.523383 [info ] [MainThread]: 
+[0m18:12:07.525360 [info ] [MainThread]: Concurrency: 1 threads (target='dev')
+[0m18:12:07.526359 [info ] [MainThread]: 
+[0m18:12:07.528358 [debug] [MainThread]: Acquiring new postgres connection 'master'
+[0m18:12:07.532359 [debug] [ThreadPool]: Acquiring new postgres connection 'list_shoesBR_landing'
+[0m18:12:13.066033 [debug] [ThreadPool]: Using postgres connection "list_shoesBR_landing"
+[0m18:12:13.067033 [debug] [ThreadPool]: On list_shoesBR_landing: /* {"app": "dbt", "dbt_version": "1.11.7", "profile_name": "shoesbr", "target_name": "dev", "connection_name": "list_shoesBR_landing"} */
+select
+      'shoesBR' as database,
+      tablename as name,
+      schemaname as schema,
+      'table' as type
+    from pg_tables
+    where schemaname ilike 'landing'
+    union all
+    select
+      'shoesBR' as database,
+      viewname as name,
+      schemaname as schema,
+      'view' as type
+    from pg_views
+    where schemaname ilike 'landing'
+    union all
+    select
+      'shoesBR' as database,
+      matviewname as name,
+      schemaname as schema,
+      'materialized_view' as type
+    from pg_matviews
+    where schemaname ilike 'landing'
+  
+[0m18:12:13.068033 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m18:12:14.771274 [debug] [ThreadPool]: SQL status: SELECT 7 in 1.703 seconds
+[0m18:12:14.779284 [debug] [ThreadPool]: On list_shoesBR_landing: ROLLBACK
+[0m18:12:14.932563 [debug] [ThreadPool]: On list_shoesBR_landing: Close
+[0m18:12:14.962036 [debug] [MainThread]: Using postgres connection "master"
+[0m18:12:14.965035 [debug] [MainThread]: On master: /* {"app": "dbt", "dbt_version": "1.11.7", "profile_name": "shoesbr", "target_name": "dev", "connection_name": "master"} */
+select distinct
+        dependent_namespace.nspname as dependent_schema,
+        dependent_class.relname as dependent_name,
+        referenced_namespace.nspname as referenced_schema,
+        referenced_class.relname as referenced_name
+
+    -- Query for views: views are entries in pg_class with an entry in pg_rewrite, but we avoid
+    -- a seq scan on pg_rewrite by leveraging the fact there is an "internal" row in pg_depend for
+    -- the view...
+    from pg_class as dependent_class
+    join pg_namespace as dependent_namespace on dependent_namespace.oid = dependent_class.relnamespace
+    join pg_depend as dependent_depend on dependent_depend.refobjid = dependent_class.oid
+        and dependent_depend.classid = 'pg_rewrite'::regclass
+        and dependent_depend.refclassid = 'pg_class'::regclass
+        and dependent_depend.deptype = 'i'
+
+    -- ... and via pg_depend (that has a row per column, hence the need for "distinct" above, and
+    -- making sure to exclude the internal row to avoid a view appearing to depend on itself)...
+    join pg_depend as joining_depend on joining_depend.objid = dependent_depend.objid
+        and joining_depend.classid = 'pg_rewrite'::regclass
+        and joining_depend.refclassid = 'pg_class'::regclass
+        and joining_depend.refobjid != dependent_depend.refobjid
+
+    -- ... we can find the tables they query from in pg_class, but excluding system tables. Note we
+    -- don't need need to exclude _dependent_ system tables, because they only query from other
+    -- system tables, and so are automatically excluded by excluding _referenced_ system tables
+    join pg_class as referenced_class on referenced_class.oid = joining_depend.refobjid
+    join pg_namespace as referenced_namespace on referenced_namespace.oid = referenced_class.relnamespace
+        and referenced_namespace.nspname != 'information_schema'
+        and referenced_namespace.nspname not like 'pg\_%'
+
+    order by
+        dependent_schema, dependent_name, referenced_schema, referenced_name;
+[0m18:12:14.967034 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m18:12:16.416940 [debug] [MainThread]: SQL status: SELECT 24 in 1.450 seconds
+[0m18:12:16.436972 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '07c75bfe-4abc-4c05-9d4a-eba566fa2128', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002C7A3651610>]}
+[0m18:12:16.438973 [debug] [MainThread]: On master: ROLLBACK
+[0m18:12:16.590025 [debug] [MainThread]: On master: Close
+[0m18:12:16.613014 [debug] [Thread-1 (]: Began running node seed.shoesbr.estorno
+[0m18:12:16.615012 [debug] [Thread-1 (]: Acquiring new postgres connection 'seed.shoesbr.estorno'
+[0m18:12:16.617010 [debug] [Thread-1 (]: Began compiling node seed.shoesbr.estorno
+[0m18:12:16.636019 [debug] [Thread-1 (]: Began executing node seed.shoesbr.estorno
+[0m18:12:16.638017 [debug] [Thread-1 (]: Finished running node seed.shoesbr.estorno
+[0m18:12:16.639995 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m18:12:16.641016 [debug] [MainThread]: Connection 'list_shoesBR_landing' was properly closed.
+[0m18:12:16.641016 [debug] [MainThread]: Connection 'seed.shoesbr.estorno' was properly closed.
+[0m18:12:16.643015 [debug] [MainThread]: Command end result
+[0m18:12:16.772940 [debug] [MainThread]: Wrote artifact WritableManifest to C:\Users\fdani\project_shoesbr\target\manifest.json
+[0m18:12:16.780815 [debug] [MainThread]: Wrote artifact SemanticManifest to C:\Users\fdani\project_shoesbr\target\semantic_manifest.json
+[0m18:12:16.798954 [debug] [MainThread]: Wrote artifact RunExecutionResult to C:\Users\fdani\project_shoesbr\target\run_results.json
+[0m18:12:28.303926 [debug] [MainThread]: Acquiring new postgres connection 'generate_catalog'
+[0m18:12:28.305924 [info ] [MainThread]: Building catalog
+[0m18:12:28.344727 [debug] [ThreadPool]: Acquiring new postgres connection 'shoesBR.information_schema'
+[0m18:12:28.363720 [debug] [ThreadPool]: Using postgres connection "shoesBR.information_schema"
+[0m18:12:28.364720 [debug] [ThreadPool]: On shoesBR.information_schema: /* {"app": "dbt", "dbt_version": "1.11.7", "profile_name": "shoesbr", "target_name": "dev", "connection_name": "shoesBR.information_schema"} */
+
+    
+    
+
+    select
+        'shoesBR' as table_database,
+        sch.nspname as table_schema,
+        tbl.relname as table_name,
+        case tbl.relkind
+            when 'v' then 'VIEW'
+            when 'm' then 'MATERIALIZED VIEW'
+            else 'BASE TABLE'
+        end as table_type,
+        tbl_desc.description as table_comment,
+        col.attname as column_name,
+        col.attnum as column_index,
+        pg_catalog.format_type(col.atttypid, col.atttypmod) as column_type,
+        col_desc.description as column_comment,
+        pg_get_userbyid(tbl.relowner) as table_owner
+
+    from pg_catalog.pg_namespace sch
+    join pg_catalog.pg_class tbl on tbl.relnamespace = sch.oid
+    join pg_catalog.pg_attribute col on col.attrelid = tbl.oid
+    left outer join pg_catalog.pg_description tbl_desc on (tbl_desc.objoid = tbl.oid and tbl_desc.objsubid = 0)
+    left outer join pg_catalog.pg_description col_desc on (col_desc.objoid = tbl.oid and col_desc.objsubid = col.attnum)
+    where ((upper(sch.nspname) = upper('landing') and
+           upper(tbl.relname) = upper('estorno')))
+      and not pg_is_other_temp_schema(sch.oid) -- not a temporary schema belonging to another session
+      and tbl.relpersistence in ('p', 'u') -- [p]ermanent table or [u]nlogged table. Exclude [t]emporary tables
+      and tbl.relkind in ('r', 'v', 'f', 'p', 'm') -- o[r]dinary table, [v]iew, [f]oreign table, [p]artitioned table, [m]aterialized view. Other values are [i]ndex, [S]equence, [c]omposite type, [t]OAST table
+      and col.attnum > 0 -- negative numbers are used for system columns such as oid
+      and not col.attisdropped -- column as not been dropped
+
+    order by
+        sch.nspname,
+        tbl.relname,
+        col.attnum
+[0m18:12:28.365719 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m18:12:30.351511 [debug] [ThreadPool]: SQL status: SELECT 6 in 1.985 seconds
+[0m18:12:30.362515 [debug] [ThreadPool]: On shoesBR.information_schema: ROLLBACK
+[0m18:12:30.514974 [debug] [ThreadPool]: On shoesBR.information_schema: Close
+[0m18:12:30.552980 [debug] [MainThread]: Wrote artifact CatalogArtifact to C:\Users\fdani\project_shoesbr\target\catalog.json
+[0m18:12:30.606934 [debug] [MainThread]: Wrote artifact WritableManifest to C:\Users\fdani\project_shoesbr\target\manifest.json
+[0m18:12:30.613925 [debug] [MainThread]: Wrote artifact SemanticManifest to C:\Users\fdani\project_shoesbr\target\semantic_manifest.json
+[0m18:12:30.615945 [info ] [MainThread]: Catalog written to C:\Users\fdani\project_shoesbr\target\catalog.json
+[0m18:12:30.618923 [debug] [MainThread]: Command `dbt docs generate` succeeded at 18:12:30.617921 after 26.32 seconds
+[0m18:12:30.619921 [debug] [MainThread]: Connection 'generate_catalog' was properly closed.
+[0m18:12:30.620920 [debug] [MainThread]: Connection 'shoesBR.information_schema' was properly closed.
+[0m18:12:30.622919 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002C7A135A5A0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002C7A1C09940>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002C7A3563B00>]}
+[0m18:12:30.623918 [debug] [MainThread]: Flushing usage events
+[0m18:12:32.258118 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m18:12:55.756486 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000244345D5D00>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000024437849370>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002443942BDA0>]}
+
+
+============================== 18:12:55.769432 | 6ab223f9-d5e0-48a0-9256-92a33b6057a9 ==============================
+[0m18:12:55.769432 [info ] [MainThread]: Running with dbt=1.11.7
+[0m18:12:55.771082 [debug] [MainThread]: running dbt with arguments {'static_parser': 'True', 'no_print': 'None', 'version_check': 'True', 'target_path': 'None', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'printer_width': '80', 'write_json': 'True', 'introspect': 'True', 'log_cache_events': 'False', 'empty': 'None', 'cache_selected_only': 'False', 'fail_fast': 'False', 'debug': 'False', 'log_format': 'default', 'profiles_dir': 'C:\\Users\\fdani\\.dbt', 'send_anonymous_usage_stats': 'True', 'quiet': 'False', 'warn_error': 'None', 'partial_parse': 'True', 'indirect_selection': 'eager', 'use_colors': 'True', 'invocation_command': 'dbt docs serve', 'use_experimental_parser': 'False', 'log_path': 'C:\\Users\\fdani\\project_shoesbr\\logs'}
+[0m18:12:56.273194 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '6ab223f9-d5e0-48a0-9256-92a33b6057a9', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002443982E150>]}
+[0m18:12:56.446312 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': '6ab223f9-d5e0-48a0-9256-92a33b6057a9', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000024437E76D80>]}
+[0m18:24:58.975103 [error] [MainThread]: Encountered an error:
+
+[0m18:24:59.067214 [error] [MainThread]: Traceback (most recent call last):
+  File "C:\Users\fdani\project_shoesbr\.venv\Lib\site-packages\dbt\cli\requires.py", line 182, in wrapper
+    result, success = func(*args, **kwargs)
+                      ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\fdani\project_shoesbr\.venv\Lib\site-packages\dbt\cli\requires.py", line 128, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\fdani\project_shoesbr\.venv\Lib\site-packages\dbt\cli\requires.py", line 276, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\fdani\project_shoesbr\.venv\Lib\site-packages\dbt\cli\requires.py", line 321, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\fdani\project_shoesbr\.venv\Lib\site-packages\dbt\cli\requires.py", line 368, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\fdani\project_shoesbr\.venv\Lib\site-packages\dbt\cli\main.py", line 307, in docs_serve
+    results = task.run()
+              ^^^^^^^^^^
+  File "C:\Users\fdani\project_shoesbr\.venv\Lib\site-packages\dbt\task\docs\serve.py", line 29, in run
+    httpd.serve_forever()
+  File "C:\Users\fdani\AppData\Local\Programs\Python\Python312\Lib\socketserver.py", line 235, in serve_forever
+    ready = selector.select(poll_interval)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\fdani\AppData\Local\Programs\Python\Python312\Lib\selectors.py", line 323, in select
+    r, w, _ = self._select(self._readers, self._writers, [], timeout)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\fdani\AppData\Local\Programs\Python\Python312\Lib\selectors.py", line 314, in _select
+    r, w, x = select.select(r, w, w, timeout)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+KeyboardInterrupt
+
+[0m18:24:59.070233 [debug] [MainThread]: Command `dbt docs serve` failed at 18:24:59.069234 after 723.57 seconds
+[0m18:24:59.071233 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000024437DD3D10>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002443982E750>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002443996F4A0>]}
+[0m18:24:59.072232 [debug] [MainThread]: Flushing usage events
+[0m18:25:00.432606 [debug] [MainThread]: An error was encountered while trying to flush usage events
