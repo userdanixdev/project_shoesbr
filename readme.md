@@ -445,14 +445,36 @@ Este projeto foi desenvolvido com foco em aprendizado prático de:
 
 ---
 
+---
+
+# 📦 Histórico de Releases
+
+O projeto **ShoesBR** segue um processo contínuo de evolução, versionamento e melhorias na arquitetura de dados.
+
+| Release | Descrição |
+|---|---|
+| `v1.0.0` | Estrutura inicial do projeto dbt, modelagem analítica, documentação e integração com GitHub |
+| `v1.1.0` | Implementação da orquestração automatizada com dbt Cloud, execução de jobs, testes e geração automática de documentação |
+
+---
+
+## 🚀 Evolução do Projeto
+
+Cada release representa uma nova etapa de maturidade do pipeline de dados, incluindo melhorias em:
+
+- Arquitetura analítica
+- Automação
+- Qualidade dos dados
+- Documentação
+- Versionamento
+- Governança
+- Orquestração
+
+O objetivo do projeto é simular um ambiente real de Engenharia de Dados e Analytics Engineering utilizando boas práticas de mercado.
+
 ## 👨‍💻 Autor
 
 Projeto desenvolvido por **Daniel M.F.**
 
 ---
 
-## 🏁 Conclusão
-
-O projeto demonstra a construção de uma pipeline robusta, seguindo padrões utilizados no mercado, e já preparado para evoluir para um ambiente analítico completo.
-
----
