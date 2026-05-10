@@ -141,6 +141,7 @@ shoesbr/
 ## ⚙️ Tecnologias Utilizadas
 
 * **dbt Core**
+* **dbt Cloud**
 * **PostgreSQL (AWS RDS)**
 * **Python (.venv)**
 * **Git**
