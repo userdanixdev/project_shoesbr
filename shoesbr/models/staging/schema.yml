@@ -98,7 +98,7 @@ models:
         tests:
             - accepted_values:
                 arguments:
-                values: ["Produto com defeito","Arrependimento", "Produto Incorreto", "Outro"]
+                values: ["Produto com defeito","Arrependimento", "Produto Incorreto", "Entrega Atrasada", "Outro"]
       
         
  
