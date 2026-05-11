@@ -42,6 +42,7 @@ Runtime Error
 [0m17:32:57.957246 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001B27DC92CF0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001B27E28CAA0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001B27DF247A0>]}
 [0m17:32:57.958245 [debug] [MainThread]: Flushing usage events
 [0m17:32:59.542687 [debug] [MainThread]: An error was encountered while trying to flush usage events
+<<<<<<< HEAD
 [0m18:46:23.645804 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000017F2C718170>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000017F29039520>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000017F2C84E810>]}
 
 
@@ -208,6 +209,58 @@ There are 5 unused configuration paths:
 [0m17:24:49.526714 [error] [MainThread]: Encountered an error:
 
 [0m17:24:49.545494 [error] [MainThread]: Traceback (most recent call last):
+=======
+[0m19:06:27.952140 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000264814776E0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002648195C0B0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002648195C080>]}
+
+
+============================== 19:06:27.970128 | b188d14c-a6ac-462e-bb18-7f300f680731 ==============================
+[0m19:06:27.970128 [info ] [MainThread]: Running with dbt=1.11.7
+[0m19:06:27.972128 [debug] [MainThread]: running dbt with arguments {'static_parser': 'True', 'no_print': 'None', 'version_check': 'True', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'target_path': 'None', 'printer_width': '80', 'write_json': 'True', 'empty': 'None', 'log_cache_events': 'False', 'introspect': 'True', 'cache_selected_only': 'False', 'log_format': 'default', 'debug': 'False', 'fail_fast': 'False', 'partial_parse': 'True', 'send_anonymous_usage_stats': 'True', 'quiet': 'False', 'warn_error': 'None', 'profiles_dir': 'C:\\Users\\fdani\\.dbt', 'invocation_command': 'dbt docs generate', 'indirect_selection': 'eager', 'use_colors': 'True', 'use_experimental_parser': 'False', 'log_path': 'C:\\Users\\fdani\\project_shoesbr\\logs'}
+[0m19:06:28.734307 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': 'b188d14c-a6ac-462e-bb18-7f300f680731', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000026481476D50>]}
+[0m19:06:28.952598 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': 'b188d14c-a6ac-462e-bb18-7f300f680731', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000264FF08A780>]}
+[0m19:06:28.969313 [info ] [MainThread]: Registered adapter: postgres=1.10.0
+[0m19:06:30.082417 [debug] [MainThread]: checksum: b80718358155fc17c3559352095564dd56ada1cc1a1c0ef2e62c857e71583775, vars: {}, profile: , target: , version: 1.11.7
+[0m19:06:30.085419 [info ] [MainThread]: Unable to do partial parsing because saved manifest not found. Starting full parse.
+[0m19:06:30.087418 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'partial_parser', 'label': 'b188d14c-a6ac-462e-bb18-7f300f680731', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000264836DAB70>]}
+[0m19:06:35.728528 [warn ] [MainThread]: [[33mWARNING[0m]: Configuration paths exist in your dbt_project.yml file which do not apply to any resources.
+There are 5 unused configuration paths:
+- models.shoesbr.marts.marketing
+- models.shoesbr.staging
+- models.shoesbr.marts
+- models.shoesbr.intermediate
+- seeds
+[0m19:06:35.750515 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': 'b188d14c-a6ac-462e-bb18-7f300f680731', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000264831B6840>]}
+[0m19:06:35.878442 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': 'b188d14c-a6ac-462e-bb18-7f300f680731', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002648398DCD0>]}
+[0m19:06:35.879443 [info ] [MainThread]: Found 465 macros
+[0m19:06:35.881440 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': 'b188d14c-a6ac-462e-bb18-7f300f680731', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000264839CEF60>]}
+[0m19:06:35.886440 [warn ] [MainThread]: Nothing to do. Try checking your model configs and model specification args
+[0m19:06:35.889436 [debug] [MainThread]: Command end result
+[0m19:06:36.047347 [debug] [MainThread]: Wrote artifact WritableManifest to C:\Users\fdani\project_shoesbr\target\manifest.json
+[0m19:06:36.054344 [debug] [MainThread]: Wrote artifact SemanticManifest to C:\Users\fdani\project_shoesbr\target\semantic_manifest.json
+[0m19:06:36.061439 [debug] [MainThread]: Wrote artifact RunExecutionResult to C:\Users\fdani\project_shoesbr\target\run_results.json
+[0m19:06:50.854856 [debug] [MainThread]: Acquiring new postgres connection 'generate_catalog'
+[0m19:06:50.854856 [info ] [MainThread]: Building catalog
+[0m19:06:58.139032 [debug] [MainThread]: Wrote artifact CatalogArtifact to C:\Users\fdani\project_shoesbr\target\catalog.json
+[0m19:06:58.204996 [debug] [MainThread]: Wrote artifact WritableManifest to C:\Users\fdani\project_shoesbr\target\manifest.json
+[0m19:06:58.213989 [debug] [MainThread]: Wrote artifact SemanticManifest to C:\Users\fdani\project_shoesbr\target\semantic_manifest.json
+[0m19:06:58.216017 [info ] [MainThread]: Catalog written to C:\Users\fdani\project_shoesbr\target\catalog.json
+[0m19:06:58.219985 [debug] [MainThread]: Command `dbt docs generate` succeeded at 19:06:58.218986 after 30.73 seconds
+[0m19:06:58.220986 [debug] [MainThread]: Connection 'generate_catalog' was properly closed.
+[0m19:06:58.222983 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000264FE4790A0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000264838BEF30>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000026483951040>]}
+[0m19:06:58.223984 [debug] [MainThread]: Flushing usage events
+[0m19:06:59.871706 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m19:07:13.780516 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002C92CF969C0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002C93066FB30>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002C93004B1D0>]}
+
+
+============================== 19:07:13.795507 | 8b64b082-23a4-4d04-b7c4-ae661225284d ==============================
+[0m19:07:13.795507 [info ] [MainThread]: Running with dbt=1.11.7
+[0m19:07:13.798509 [debug] [MainThread]: running dbt with arguments {'version_check': 'True', 'no_print': 'None', 'static_parser': 'True', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'target_path': 'None', 'printer_width': '80', 'write_json': 'True', 'empty': 'None', 'log_cache_events': 'False', 'introspect': 'True', 'cache_selected_only': 'False', 'log_format': 'default', 'debug': 'False', 'fail_fast': 'False', 'partial_parse': 'True', 'send_anonymous_usage_stats': 'True', 'quiet': 'False', 'warn_error': 'None', 'profiles_dir': 'C:\\Users\\fdani\\.dbt', 'invocation_command': 'dbt docs serve', 'use_colors': 'True', 'indirect_selection': 'eager', 'use_experimental_parser': 'False', 'log_path': 'C:\\Users\\fdani\\project_shoesbr\\logs'}
+[0m19:07:14.466483 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '8b64b082-23a4-4d04-b7c4-ae661225284d', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002C931D58830>]}
+[0m19:07:14.725957 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': '8b64b082-23a4-4d04-b7c4-ae661225284d', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002C930081A30>]}
+[0m19:07:44.999671 [error] [MainThread]: Encountered an error:
+
+[0m19:07:45.114597 [error] [MainThread]: Traceback (most recent call last):
+>>>>>>> dev
   File "C:\Users\fdani\project_shoesbr\.venv\Lib\site-packages\dbt\cli\requires.py", line 182, in wrapper
     result, success = func(*args, **kwargs)
                       ^^^^^^^^^^^^^^^^^^^^^
@@ -239,6 +292,7 @@ There are 5 unused configuration paths:
               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 KeyboardInterrupt
 
+<<<<<<< HEAD
 [0m17:24:49.560475 [debug] [MainThread]: Command `dbt docs serve` failed at 17:24:49.556479 after 96.27 seconds
 [0m17:24:49.565470 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000231500F9160>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000231554738C0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000231554CD190>]}
 [0m17:24:49.567470 [debug] [MainThread]: Flushing usage events
@@ -254,6 +308,85 @@ KeyboardInterrupt
 [0m17:26:54.022852 [error] [MainThread]: Encountered an error:
 
 [0m17:26:54.036888 [error] [MainThread]: Traceback (most recent call last):
+=======
+[0m19:07:45.118592 [debug] [MainThread]: Command `dbt docs serve` failed at 19:07:45.117592 after 31.71 seconds
+[0m19:07:45.119589 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002C930BB76E0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002C92FFF6CC0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002C93234BF80>]}
+[0m19:07:45.121590 [debug] [MainThread]: Flushing usage events
+[0m19:07:46.608979 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m19:08:44.772409 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000239726A48F0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002397514AB10>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002397427AA50>]}
+
+
+============================== 19:08:44.788419 | d2a98503-d38a-48f7-a150-ef81482d6566 ==============================
+[0m19:08:44.788419 [info ] [MainThread]: Running with dbt=1.11.7
+[0m19:08:44.791397 [debug] [MainThread]: running dbt with arguments {'version_check': 'True', 'no_print': 'None', 'static_parser': 'True', 'target_path': 'None', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'printer_width': '80', 'write_json': 'True', 'empty': 'None', 'log_cache_events': 'False', 'introspect': 'True', 'cache_selected_only': 'False', 'fail_fast': 'False', 'debug': 'False', 'log_format': 'default', 'profiles_dir': 'C:\\Users\\fdani\\.dbt', 'send_anonymous_usage_stats': 'True', 'quiet': 'False', 'warn_error': 'None', 'partial_parse': 'True', 'invocation_command': 'dbt clean', 'use_colors': 'True', 'indirect_selection': 'eager', 'use_experimental_parser': 'False', 'log_path': 'C:\\Users\\fdani\\project_shoesbr\\logs'}
+[0m19:08:44.808388 [warn ] [MainThread]: [[33mWARNING[0m][MissingPlusPrefixDeprecation]: Deprecated functionality
+Missing '+' prefix on `finance` found at `shoesbr.marts.finance` in file
+`C:\Users\fdani\project_shoesbr\dbt_project.yml`. Hierarchical config values
+without a '+' prefix are deprecated in dbt_project.yml.
+[0m19:08:44.811386 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'deprecation', 'label': 'd2a98503-d38a-48f7-a150-ef81482d6566', 'property_': 'warn', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000239757B0BC0>]}
+[0m19:08:45.332088 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': 'd2a98503-d38a-48f7-a150-ef81482d6566', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000023974DFAA50>]}
+[0m19:08:45.445020 [warn ] [MainThread]: [[33mWARNING[0m][DeprecationsSummary]: Deprecated functionality
+Summary of encountered deprecations:
+- MissingPlusPrefixDeprecation: 1 occurrence
+To see all deprecation instances instead of just the first occurrence of each,
+run command again with the `--show-all-deprecations` flag. You may also need to
+run with `--no-partial-parse` as some deprecations are only encountered during
+parsing.
+[0m19:08:45.461012 [debug] [MainThread]: Command `dbt clean` succeeded at 19:08:45.461012 after 1.19 seconds
+[0m19:08:45.476003 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002397521E690>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002397521C7A0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000023976EBD370>]}
+[0m19:08:45.477003 [debug] [MainThread]: Flushing usage events
+[0m19:08:47.099748 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m19:09:15.042893 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002CCA1605D00>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002CCA48B63C0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002CCA48B6090>]}
+
+
+============================== 19:09:15.061884 | 97e19755-2168-4512-9727-95ef31827f6e ==============================
+[0m19:09:15.061884 [info ] [MainThread]: Running with dbt=1.11.7
+[0m19:09:15.064886 [debug] [MainThread]: running dbt with arguments {'version_check': 'True', 'no_print': 'None', 'static_parser': 'True', 'target_path': 'None', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'printer_width': '80', 'write_json': 'True', 'empty': 'None', 'log_cache_events': 'False', 'introspect': 'True', 'cache_selected_only': 'False', 'log_format': 'default', 'debug': 'False', 'fail_fast': 'False', 'partial_parse': 'True', 'send_anonymous_usage_stats': 'True', 'quiet': 'False', 'warn_error': 'None', 'profiles_dir': 'C:\\Users\\fdani\\.dbt', 'use_colors': 'True', 'invocation_command': 'dbt docs generate', 'indirect_selection': 'eager', 'use_experimental_parser': 'False', 'log_path': 'C:\\Users\\fdani\\project_shoesbr\\logs'}
+[0m19:09:15.793186 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '97e19755-2168-4512-9727-95ef31827f6e', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002CCA5309D00>]}
+[0m19:09:16.036495 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': '97e19755-2168-4512-9727-95ef31827f6e', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002CCA6572270>]}
+[0m19:09:16.040487 [info ] [MainThread]: Registered adapter: postgres=1.10.0
+[0m19:09:16.898149 [debug] [MainThread]: checksum: b80718358155fc17c3559352095564dd56ada1cc1a1c0ef2e62c857e71583775, vars: {}, profile: , target: , version: 1.11.7
+[0m19:09:16.902122 [info ] [MainThread]: Unable to do partial parsing because saved manifest not found. Starting full parse.
+[0m19:09:16.904121 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'partial_parser', 'label': '97e19755-2168-4512-9727-95ef31827f6e', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002CCA692B530>]}
+[0m19:09:20.561326 [warn ] [MainThread]: [[33mWARNING[0m]: Configuration paths exist in your dbt_project.yml file which do not apply to any resources.
+There are 5 unused configuration paths:
+- models.shoesbr.marts.marketing
+- models.shoesbr.staging
+- models.shoesbr.marts
+- models.shoesbr.intermediate
+- seeds
+[0m19:09:20.581315 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': '97e19755-2168-4512-9727-95ef31827f6e', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002CCA6C1C080>]}
+[0m19:09:20.673262 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': '97e19755-2168-4512-9727-95ef31827f6e', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002CCA6BDD8B0>]}
+[0m19:09:20.675283 [info ] [MainThread]: Found 465 macros
+[0m19:09:20.677260 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '97e19755-2168-4512-9727-95ef31827f6e', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002CCA695DC40>]}
+[0m19:09:20.681265 [warn ] [MainThread]: Nothing to do. Try checking your model configs and model specification args
+[0m19:09:20.684262 [debug] [MainThread]: Command end result
+[0m19:09:20.849564 [debug] [MainThread]: Wrote artifact WritableManifest to C:\Users\fdani\project_shoesbr\target\manifest.json
+[0m19:09:20.857558 [debug] [MainThread]: Wrote artifact SemanticManifest to C:\Users\fdani\project_shoesbr\target\semantic_manifest.json
+[0m19:09:20.867553 [debug] [MainThread]: Wrote artifact RunExecutionResult to C:\Users\fdani\project_shoesbr\target\run_results.json
+[0m19:09:20.874552 [debug] [MainThread]: Acquiring new postgres connection 'generate_catalog'
+[0m19:09:20.875549 [info ] [MainThread]: Building catalog
+[0m19:09:21.082653 [debug] [MainThread]: Wrote artifact CatalogArtifact to C:\Users\fdani\project_shoesbr\target\catalog.json
+[0m19:09:21.169607 [debug] [MainThread]: Wrote artifact WritableManifest to C:\Users\fdani\project_shoesbr\target\manifest.json
+[0m19:09:21.180600 [debug] [MainThread]: Wrote artifact SemanticManifest to C:\Users\fdani\project_shoesbr\target\semantic_manifest.json
+[0m19:09:21.182601 [info ] [MainThread]: Catalog written to C:\Users\fdani\project_shoesbr\target\catalog.json
+[0m19:09:21.185599 [debug] [MainThread]: Command `dbt docs generate` succeeded at 19:09:21.185599 after 6.52 seconds
+[0m19:09:21.187598 [debug] [MainThread]: Connection 'generate_catalog' was properly closed.
+[0m19:09:21.188595 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002CCA49C7C80>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002CCA49A51F0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002CCA4EFC260>]}
+[0m19:09:21.190594 [debug] [MainThread]: Flushing usage events
+[0m19:09:22.749407 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m19:09:35.918862 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002203E8AB980>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000022041CD4FE0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002204249F4A0>]}
+
+
+============================== 19:09:35.934492 | 115757ff-a41a-4621-8c23-72f6ccf6c04a ==============================
+[0m19:09:35.934492 [info ] [MainThread]: Running with dbt=1.11.7
+[0m19:09:35.934492 [debug] [MainThread]: running dbt with arguments {'static_parser': 'True', 'no_print': 'None', 'version_check': 'True', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'target_path': 'None', 'printer_width': '80', 'write_json': 'True', 'introspect': 'True', 'log_cache_events': 'False', 'empty': 'None', 'cache_selected_only': 'False', 'fail_fast': 'False', 'debug': 'False', 'log_format': 'default', 'profiles_dir': 'C:\\Users\\fdani\\.dbt', 'send_anonymous_usage_stats': 'True', 'quiet': 'False', 'warn_error': 'None', 'partial_parse': 'True', 'invocation_command': 'dbt docs serve', 'use_colors': 'True', 'indirect_selection': 'eager', 'use_experimental_parser': 'False', 'log_path': 'C:\\Users\\fdani\\project_shoesbr\\logs'}
+[0m19:09:36.642954 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '115757ff-a41a-4621-8c23-72f6ccf6c04a', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000022043794FB0>]}
+[0m19:09:36.906801 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': '115757ff-a41a-4621-8c23-72f6ccf6c04a', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000220420C5520>]}
+[0m19:10:09.034522 [error] [MainThread]: Encountered an error:
+
+[0m19:10:09.042508 [error] [MainThread]: Traceback (most recent call last):
+>>>>>>> dev
   File "C:\Users\fdani\project_shoesbr\.venv\Lib\site-packages\dbt\cli\requires.py", line 182, in wrapper
     result, success = func(*args, **kwargs)
                       ^^^^^^^^^^^^^^^^^^^^^
@@ -285,6 +418,7 @@ KeyboardInterrupt
               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 KeyboardInterrupt
 
+<<<<<<< HEAD
 [0m17:26:54.045858 [debug] [MainThread]: Command `dbt docs serve` failed at 17:26:54.043849 after 113.72 seconds
 [0m17:26:54.049847 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000202B9789760>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000202BADB2A80>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000202B8A47320>]}
 [0m17:26:54.053853 [debug] [MainThread]: Flushing usage events
@@ -335,6 +469,108 @@ There are 5 unused configuration paths:
 [0m17:29:53.829686 [error] [MainThread]: Encountered an error:
 
 [0m17:29:53.847575 [error] [MainThread]: Traceback (most recent call last):
+=======
+[0m19:10:09.046505 [debug] [MainThread]: Command `dbt docs serve` failed at 19:10:09.046505 after 33.51 seconds
+[0m19:10:09.048507 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002204358E810>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000022043B4F770>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000022043A7FC20>]}
+[0m19:10:09.051502 [debug] [MainThread]: Flushing usage events
+[0m19:10:10.527063 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m19:10:27.969711 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001F551316270>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001F550D8AAB0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001F54D75CF80>]}
+
+
+============================== 19:10:27.986699 | 49ef5713-6a74-4d47-bf4a-5ec3b1205cb3 ==============================
+[0m19:10:27.986699 [info ] [MainThread]: Running with dbt=1.11.7
+[0m19:10:27.989701 [debug] [MainThread]: running dbt with arguments {'version_check': 'True', 'no_print': 'None', 'static_parser': 'True', 'target_path': 'None', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'printer_width': '80', 'write_json': 'True', 'empty': 'None', 'log_cache_events': 'False', 'introspect': 'True', 'cache_selected_only': 'False', 'fail_fast': 'False', 'debug': 'False', 'log_format': 'default', 'partial_parse': 'True', 'send_anonymous_usage_stats': 'True', 'quiet': 'False', 'warn_error': 'None', 'profiles_dir': 'C:\\Users\\fdani\\.dbt', 'indirect_selection': 'eager', 'use_colors': 'True', 'invocation_command': 'dbt clean', 'use_experimental_parser': 'False', 'log_path': 'C:\\Users\\fdani\\project_shoesbr\\logs'}
+[0m19:10:28.001691 [warn ] [MainThread]: [[33mWARNING[0m][MissingPlusPrefixDeprecation]: Deprecated functionality
+Missing '+' prefix on `finance` found at `shoesbr.marts.finance` in file
+`C:\Users\fdani\project_shoesbr\dbt_project.yml`. Hierarchical config values
+without a '+' prefix are deprecated in dbt_project.yml.
+[0m19:10:28.004694 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'deprecation', 'label': '49ef5713-6a74-4d47-bf4a-5ec3b1205cb3', 'property_': 'warn', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001F552560FE0>]}
+[0m19:10:28.578267 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '49ef5713-6a74-4d47-bf4a-5ec3b1205cb3', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001F55149BB90>]}
+[0m19:10:28.687134 [warn ] [MainThread]: [[33mWARNING[0m][DeprecationsSummary]: Deprecated functionality
+Summary of encountered deprecations:
+- MissingPlusPrefixDeprecation: 1 occurrence
+To see all deprecation instances instead of just the first occurrence of each,
+run command again with the `--show-all-deprecations` flag. You may also need to
+run with `--no-partial-parse` as some deprecations are only encountered during
+parsing.
+[0m19:10:28.695128 [debug] [MainThread]: Command `dbt clean` succeeded at 19:10:28.694130 after 1.13 seconds
+[0m19:10:28.697129 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001F5510F11C0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001F55149BB90>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001F5528C1100>]}
+[0m19:10:28.698127 [debug] [MainThread]: Flushing usage events
+[0m19:10:30.507931 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m19:18:43.783507 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000027F1DD063F0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000027F1DD062D0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000027F1D89A060>]}
+
+
+============================== 19:18:43.799130 | 343b4a83-5fca-44cc-a877-a0ef4a0bb9f2 ==============================
+[0m19:18:43.799130 [info ] [MainThread]: Running with dbt=1.11.7
+[0m19:18:43.799130 [debug] [MainThread]: running dbt with arguments {'static_parser': 'True', 'no_print': 'None', 'version_check': 'True', 'target_path': 'None', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'printer_width': '80', 'write_json': 'True', 'empty': 'None', 'log_cache_events': 'False', 'introspect': 'True', 'cache_selected_only': 'False', 'fail_fast': 'False', 'debug': 'False', 'log_format': 'default', 'partial_parse': 'True', 'send_anonymous_usage_stats': 'True', 'quiet': 'False', 'warn_error': 'None', 'profiles_dir': 'C:\\Users\\fdani\\.dbt', 'invocation_command': 'dbt clean', 'use_colors': 'True', 'indirect_selection': 'eager', 'use_experimental_parser': 'False', 'log_path': 'C:\\Users\\fdani\\project_shoesbr\\logs'}
+[0m19:18:43.830405 [warn ] [MainThread]: [[33mWARNING[0m][MissingPlusPrefixDeprecation]: Deprecated functionality
+Missing '+' prefix on `finance` found at `shoesbr.marts.finance` in file
+`C:\Users\fdani\project_shoesbr\dbt_project.yml`. Hierarchical config values
+without a '+' prefix are deprecated in dbt_project.yml.
+[0m19:18:43.833335 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'deprecation', 'label': '343b4a83-5fca-44cc-a877-a0ef4a0bb9f2', 'property_': 'warn', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000027F1D9B9670>]}
+[0m19:18:44.350109 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '343b4a83-5fca-44cc-a877-a0ef4a0bb9f2', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000027F1D19AF60>]}
+[0m19:18:44.428064 [warn ] [MainThread]: [[33mWARNING[0m][DeprecationsSummary]: Deprecated functionality
+Summary of encountered deprecations:
+- MissingPlusPrefixDeprecation: 1 occurrence
+To see all deprecation instances instead of just the first occurrence of each,
+run command again with the `--show-all-deprecations` flag. You may also need to
+run with `--no-partial-parse` as some deprecations are only encountered during
+parsing.
+[0m19:18:44.431062 [debug] [MainThread]: Command `dbt clean` succeeded at 19:18:44.431062 after 1.13 seconds
+[0m19:18:44.432061 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000027F1D7F4F80>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000027F1C92C860>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000027F1EE877A0>]}
+[0m19:18:44.434060 [debug] [MainThread]: Flushing usage events
+[0m19:18:45.962507 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m19:19:03.580380 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001C33A4A55E0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001C339605D00>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001C33BD05640>]}
+
+
+============================== 19:19:03.597371 | 9c0cc1d7-d8d9-4110-b0f6-7a8463828d7c ==============================
+[0m19:19:03.597371 [info ] [MainThread]: Running with dbt=1.11.7
+[0m19:19:03.599374 [debug] [MainThread]: running dbt with arguments {'static_parser': 'True', 'no_print': 'None', 'version_check': 'True', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'target_path': 'None', 'printer_width': '80', 'write_json': 'True', 'introspect': 'True', 'log_cache_events': 'False', 'empty': 'None', 'cache_selected_only': 'False', 'fail_fast': 'False', 'debug': 'False', 'log_format': 'default', 'partial_parse': 'True', 'send_anonymous_usage_stats': 'True', 'quiet': 'False', 'warn_error': 'None', 'profiles_dir': 'C:\\Users\\fdani\\.dbt', 'invocation_command': 'dbt docs generate', 'use_colors': 'True', 'indirect_selection': 'eager', 'use_experimental_parser': 'False', 'log_path': 'C:\\Users\\fdani\\project_shoesbr\\logs'}
+[0m19:19:04.314951 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '9c0cc1d7-d8d9-4110-b0f6-7a8463828d7c', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001C33E54FDD0>]}
+[0m19:19:04.545683 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': '9c0cc1d7-d8d9-4110-b0f6-7a8463828d7c', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001C33BD34110>]}
+[0m19:19:04.551675 [info ] [MainThread]: Registered adapter: postgres=1.10.0
+[0m19:19:05.409626 [debug] [MainThread]: checksum: b80718358155fc17c3559352095564dd56ada1cc1a1c0ef2e62c857e71583775, vars: {}, profile: , target: , version: 1.11.7
+[0m19:19:05.413623 [info ] [MainThread]: Unable to do partial parsing because saved manifest not found. Starting full parse.
+[0m19:19:05.415621 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'partial_parser', 'label': '9c0cc1d7-d8d9-4110-b0f6-7a8463828d7c', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001C33E9D9640>]}
+[0m19:19:08.651532 [warn ] [MainThread]: [[33mWARNING[0m]: Configuration paths exist in your dbt_project.yml file which do not apply to any resources.
+There are 5 unused configuration paths:
+- models.shoesbr.staging
+- models.shoesbr.intermediate
+- models.shoesbr.marts
+- models.shoesbr.marts.marketing
+- seeds
+[0m19:19:08.678519 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': '9c0cc1d7-d8d9-4110-b0f6-7a8463828d7c', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001C33E4A6840>]}
+[0m19:19:08.777459 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': '9c0cc1d7-d8d9-4110-b0f6-7a8463828d7c', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001C33EC306B0>]}
+[0m19:19:08.779483 [info ] [MainThread]: Found 465 macros
+[0m19:19:08.781458 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '9c0cc1d7-d8d9-4110-b0f6-7a8463828d7c', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001C33EB36420>]}
+[0m19:19:08.787457 [warn ] [MainThread]: Nothing to do. Try checking your model configs and model specification args
+[0m19:19:08.790459 [debug] [MainThread]: Command end result
+[0m19:19:08.950623 [debug] [MainThread]: Wrote artifact WritableManifest to C:\Users\fdani\project_shoesbr\target\manifest.json
+[0m19:19:08.957693 [debug] [MainThread]: Wrote artifact SemanticManifest to C:\Users\fdani\project_shoesbr\target\semantic_manifest.json
+[0m19:19:08.957693 [debug] [MainThread]: Wrote artifact RunExecutionResult to C:\Users\fdani\project_shoesbr\target\run_results.json
+[0m19:19:08.980507 [debug] [MainThread]: Acquiring new postgres connection 'generate_catalog'
+[0m19:19:08.982510 [info ] [MainThread]: Building catalog
+[0m19:19:09.206468 [debug] [MainThread]: Wrote artifact CatalogArtifact to C:\Users\fdani\project_shoesbr\target\catalog.json
+[0m19:19:09.305572 [debug] [MainThread]: Wrote artifact WritableManifest to C:\Users\fdani\project_shoesbr\target\manifest.json
+[0m19:19:09.311568 [debug] [MainThread]: Wrote artifact SemanticManifest to C:\Users\fdani\project_shoesbr\target\semantic_manifest.json
+[0m19:19:09.313568 [info ] [MainThread]: Catalog written to C:\Users\fdani\project_shoesbr\target\catalog.json
+[0m19:19:09.317200 [debug] [MainThread]: Command `dbt docs generate` succeeded at 19:19:09.317200 after 6.11 seconds
+[0m19:19:09.319204 [debug] [MainThread]: Connection 'generate_catalog' was properly closed.
+[0m19:19:09.320204 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001C33A4A55E0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001C33D2986E0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001C33C2C8440>]}
+[0m19:19:09.321204 [debug] [MainThread]: Flushing usage events
+[0m19:19:10.862494 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m19:19:24.235264 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001281906F920>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001281630FD70>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001281990A030>]}
+
+
+============================== 19:19:24.249261 | e0317980-4e65-4f45-a371-15c236f76964 ==============================
+[0m19:19:24.249261 [info ] [MainThread]: Running with dbt=1.11.7
+[0m19:19:24.251259 [debug] [MainThread]: running dbt with arguments {'static_parser': 'True', 'no_print': 'None', 'version_check': 'True', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'target_path': 'None', 'printer_width': '80', 'write_json': 'True', 'introspect': 'True', 'log_cache_events': 'False', 'empty': 'None', 'cache_selected_only': 'False', 'log_format': 'default', 'debug': 'False', 'fail_fast': 'False', 'partial_parse': 'True', 'send_anonymous_usage_stats': 'True', 'quiet': 'False', 'warn_error': 'None', 'profiles_dir': 'C:\\Users\\fdani\\.dbt', 'indirect_selection': 'eager', 'use_colors': 'True', 'invocation_command': 'dbt docs serve', 'use_experimental_parser': 'False', 'log_path': 'C:\\Users\\fdani\\project_shoesbr\\logs'}
+[0m19:19:25.006268 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': 'e0317980-4e65-4f45-a371-15c236f76964', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001281B233980>]}
+[0m19:19:25.248992 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': 'e0317980-4e65-4f45-a371-15c236f76964', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000012819CD6C30>]}
+[0m19:19:58.807307 [error] [MainThread]: Encountered an error:
+
+[0m19:19:58.807307 [error] [MainThread]: Traceback (most recent call last):
+>>>>>>> dev
   File "C:\Users\fdani\project_shoesbr\.venv\Lib\site-packages\dbt\cli\requires.py", line 182, in wrapper
     result, success = func(*args, **kwargs)
                       ^^^^^^^^^^^^^^^^^^^^^
@@ -366,6 +602,7 @@ There are 5 unused configuration paths:
               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 KeyboardInterrupt
 
+<<<<<<< HEAD
 [0m17:29:53.860418 [debug] [MainThread]: Command `dbt docs serve` failed at 17:29:53.858418 after 66.65 seconds
 [0m17:29:53.864451 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000024A68DB58B0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000024A6A46A1E0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000024A6A25FE00>]}
 [0m17:29:53.866420 [debug] [MainThread]: Flushing usage events
@@ -446,6 +683,114 @@ There are 5 unused configuration paths:
 [0m18:12:07.532359 [debug] [ThreadPool]: Acquiring new postgres connection 'list_shoesBR_landing'
 [0m18:12:13.066033 [debug] [ThreadPool]: Using postgres connection "list_shoesBR_landing"
 [0m18:12:13.067033 [debug] [ThreadPool]: On list_shoesBR_landing: /* {"app": "dbt", "dbt_version": "1.11.7", "profile_name": "shoesbr", "target_name": "dev", "connection_name": "list_shoesBR_landing"} */
+=======
+[0m19:19:58.821972 [debug] [MainThread]: Command `dbt docs serve` failed at 19:19:58.821972 after 34.97 seconds
+[0m19:19:58.823963 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001281994AC00>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001281B55FC20>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001281941FCB0>]}
+[0m19:19:58.825963 [debug] [MainThread]: Flushing usage events
+[0m19:20:00.360027 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m19:22:53.436343 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002A46C2CBA40>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002A46C2C9F10>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002A46C2CBEF0>]}
+
+
+============================== 19:22:53.467591 | ee930d42-0b51-4887-bfc1-fc17433f23e0 ==============================
+[0m19:22:53.467591 [info ] [MainThread]: Running with dbt=1.11.7
+[0m19:22:53.467591 [debug] [MainThread]: running dbt with arguments {'version_check': 'True', 'no_print': 'None', 'static_parser': 'True', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'target_path': 'None', 'printer_width': '80', 'write_json': 'True', 'introspect': 'True', 'log_cache_events': 'False', 'empty': 'None', 'cache_selected_only': 'False', 'log_format': 'default', 'debug': 'False', 'fail_fast': 'False', 'partial_parse': 'True', 'send_anonymous_usage_stats': 'True', 'quiet': 'False', 'warn_error': 'None', 'profiles_dir': 'C:\\Users\\fdani\\.dbt', 'invocation_command': 'dbt clean', 'use_colors': 'True', 'indirect_selection': 'eager', 'use_experimental_parser': 'False', 'log_path': 'C:\\Users\\fdani\\project_shoesbr\\logs'}
+[0m19:22:54.013077 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': 'ee930d42-0b51-4887-bfc1-fc17433f23e0', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002A46DD05700>]}
+[0m19:22:54.109915 [debug] [MainThread]: Command `dbt clean` succeeded at 19:22:54.108912 after 1.15 seconds
+[0m19:22:54.112912 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002A46C748C80>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002A46C79C230>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002A46B1259A0>]}
+[0m19:22:54.114911 [debug] [MainThread]: Flushing usage events
+[0m19:22:55.759720 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m19:23:14.889565 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000023E92E35910>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000023E95B7D8B0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000023E9544C6E0>]}
+
+
+============================== 19:23:14.907007 | d6b3e646-6f85-4c47-ba2f-534d3c2fc221 ==============================
+[0m19:23:14.907007 [info ] [MainThread]: Running with dbt=1.11.7
+[0m19:23:14.909009 [debug] [MainThread]: running dbt with arguments {'version_check': 'True', 'no_print': 'None', 'static_parser': 'True', 'target_path': 'None', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'printer_width': '80', 'write_json': 'True', 'empty': 'None', 'log_cache_events': 'False', 'introspect': 'True', 'cache_selected_only': 'False', 'fail_fast': 'False', 'debug': 'False', 'log_format': 'default', 'profiles_dir': 'C:\\Users\\fdani\\.dbt', 'send_anonymous_usage_stats': 'True', 'quiet': 'False', 'warn_error': 'None', 'partial_parse': 'True', 'indirect_selection': 'eager', 'invocation_command': 'dbt docs generate', 'use_colors': 'True', 'use_experimental_parser': 'False', 'log_path': 'C:\\Users\\fdani\\project_shoesbr\\logs'}
+[0m19:23:15.597211 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': 'd6b3e646-6f85-4c47-ba2f-534d3c2fc221', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000023E95011B80>]}
+[0m19:23:15.824322 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': 'd6b3e646-6f85-4c47-ba2f-534d3c2fc221', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000023E96E99DF0>]}
+[0m19:23:15.828319 [info ] [MainThread]: Registered adapter: postgres=1.10.0
+[0m19:23:16.702819 [debug] [MainThread]: checksum: b80718358155fc17c3559352095564dd56ada1cc1a1c0ef2e62c857e71583775, vars: {}, profile: , target: , version: 1.11.7
+[0m19:23:16.705817 [info ] [MainThread]: Unable to do partial parsing because saved manifest not found. Starting full parse.
+[0m19:23:16.707814 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'partial_parser', 'label': 'd6b3e646-6f85-4c47-ba2f-534d3c2fc221', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000023E95CCBEC0>]}
+[0m19:23:23.272433 [warn ] [MainThread]: [[33mWARNING[0m][MissingArgumentsPropertyInGenericTestDeprecation]: Deprecated
+functionality
+Found top-level arguments to test `accepted_values` defined on 'stg_estorno' in
+package 'shoesbr' (shoesbr/models\staging\schema.yml). Arguments to generic
+tests should be nested under the `arguments` property.
+[0m19:23:23.274432 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'deprecation', 'label': 'd6b3e646-6f85-4c47-ba2f-534d3c2fc221', 'property_': 'warn', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000023E97587590>]}
+[0m19:23:24.043329 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': 'd6b3e646-6f85-4c47-ba2f-534d3c2fc221', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000023E97922F00>]}
+[0m19:23:24.162811 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': 'd6b3e646-6f85-4c47-ba2f-534d3c2fc221', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000023E978FE960>]}
+[0m19:23:24.162811 [info ] [MainThread]: Found 11 models, 1 seed, 14 data tests, 4 sources, 466 macros
+[0m19:23:24.178439 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': 'd6b3e646-6f85-4c47-ba2f-534d3c2fc221', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000023E97951370>]}
+[0m19:23:24.178439 [info ] [MainThread]: 
+[0m19:23:24.178439 [info ] [MainThread]: Concurrency: 1 threads (target='dev')
+[0m19:23:24.194014 [info ] [MainThread]: 
+[0m19:23:24.197011 [debug] [MainThread]: Acquiring new postgres connection 'master'
+[0m19:23:24.223898 [debug] [ThreadPool]: Acquiring new postgres connection 'list_shoesBR_staging'
+[0m19:23:24.572532 [debug] [ThreadPool]: Using postgres connection "list_shoesBR_staging"
+[0m19:23:24.574534 [debug] [ThreadPool]: On list_shoesBR_staging: /* {"app": "dbt", "dbt_version": "1.11.7", "profile_name": "shoesbr", "target_name": "dev", "connection_name": "list_shoesBR_staging"} */
+select
+      'shoesBR' as database,
+      tablename as name,
+      schemaname as schema,
+      'table' as type
+    from pg_tables
+    where schemaname ilike 'staging'
+    union all
+    select
+      'shoesBR' as database,
+      viewname as name,
+      schemaname as schema,
+      'view' as type
+    from pg_views
+    where schemaname ilike 'staging'
+    union all
+    select
+      'shoesBR' as database,
+      matviewname as name,
+      schemaname as schema,
+      'materialized_view' as type
+    from pg_matviews
+    where schemaname ilike 'staging'
+  
+[0m19:23:24.576533 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m19:23:26.144627 [debug] [ThreadPool]: SQL status: SELECT 4 in 1.567 seconds
+[0m19:23:26.150623 [debug] [ThreadPool]: On list_shoesBR_staging: ROLLBACK
+[0m19:23:26.305605 [debug] [ThreadPool]: On list_shoesBR_staging: Close
+[0m19:23:26.308603 [debug] [ThreadPool]: Re-using an available connection from the pool (formerly list_shoesBR_staging, now list_shoesBR_marts)
+[0m19:23:26.322596 [debug] [ThreadPool]: Using postgres connection "list_shoesBR_marts"
+[0m19:23:26.324595 [debug] [ThreadPool]: On list_shoesBR_marts: /* {"app": "dbt", "dbt_version": "1.11.7", "profile_name": "shoesbr", "target_name": "dev", "connection_name": "list_shoesBR_marts"} */
+select
+      'shoesBR' as database,
+      tablename as name,
+      schemaname as schema,
+      'table' as type
+    from pg_tables
+    where schemaname ilike 'marts'
+    union all
+    select
+      'shoesBR' as database,
+      viewname as name,
+      schemaname as schema,
+      'view' as type
+    from pg_views
+    where schemaname ilike 'marts'
+    union all
+    select
+      'shoesBR' as database,
+      matviewname as name,
+      schemaname as schema,
+      'materialized_view' as type
+    from pg_matviews
+    where schemaname ilike 'marts'
+  
+[0m19:23:26.325594 [debug] [ThreadPool]: Opening a new connection, currently in state closed
+[0m19:23:27.784469 [debug] [ThreadPool]: SQL status: SELECT 3 in 1.459 seconds
+[0m19:23:27.790465 [debug] [ThreadPool]: On list_shoesBR_marts: ROLLBACK
+[0m19:23:27.943826 [debug] [ThreadPool]: On list_shoesBR_marts: Close
+[0m19:23:27.946824 [debug] [ThreadPool]: Re-using an available connection from the pool (formerly list_shoesBR_marts, now list_shoesBR_landing)
+[0m19:23:27.956821 [debug] [ThreadPool]: Using postgres connection "list_shoesBR_landing"
+[0m19:23:27.958823 [debug] [ThreadPool]: On list_shoesBR_landing: /* {"app": "dbt", "dbt_version": "1.11.7", "profile_name": "shoesbr", "target_name": "dev", "connection_name": "list_shoesBR_landing"} */
+>>>>>>> dev
 select
       'shoesBR' as database,
       tablename as name,
@@ -470,12 +815,52 @@ select
     from pg_matviews
     where schemaname ilike 'landing'
   
+<<<<<<< HEAD
 [0m18:12:13.068033 [debug] [ThreadPool]: Opening a new connection, currently in state init
 [0m18:12:14.771274 [debug] [ThreadPool]: SQL status: SELECT 7 in 1.703 seconds
 [0m18:12:14.779284 [debug] [ThreadPool]: On list_shoesBR_landing: ROLLBACK
 [0m18:12:14.932563 [debug] [ThreadPool]: On list_shoesBR_landing: Close
 [0m18:12:14.962036 [debug] [MainThread]: Using postgres connection "master"
 [0m18:12:14.965035 [debug] [MainThread]: On master: /* {"app": "dbt", "dbt_version": "1.11.7", "profile_name": "shoesbr", "target_name": "dev", "connection_name": "master"} */
+=======
+[0m19:23:27.960818 [debug] [ThreadPool]: Opening a new connection, currently in state closed
+[0m19:23:29.723640 [debug] [ThreadPool]: SQL status: SELECT 7 in 1.763 seconds
+[0m19:23:29.728637 [debug] [ThreadPool]: On list_shoesBR_landing: ROLLBACK
+[0m19:23:29.885551 [debug] [ThreadPool]: On list_shoesBR_landing: Close
+[0m19:23:29.888546 [debug] [ThreadPool]: Re-using an available connection from the pool (formerly list_shoesBR_landing, now list_shoesBR_intermediate)
+[0m19:23:29.903537 [debug] [ThreadPool]: Using postgres connection "list_shoesBR_intermediate"
+[0m19:23:29.904536 [debug] [ThreadPool]: On list_shoesBR_intermediate: /* {"app": "dbt", "dbt_version": "1.11.7", "profile_name": "shoesbr", "target_name": "dev", "connection_name": "list_shoesBR_intermediate"} */
+select
+      'shoesBR' as database,
+      tablename as name,
+      schemaname as schema,
+      'table' as type
+    from pg_tables
+    where schemaname ilike 'intermediate'
+    union all
+    select
+      'shoesBR' as database,
+      viewname as name,
+      schemaname as schema,
+      'view' as type
+    from pg_views
+    where schemaname ilike 'intermediate'
+    union all
+    select
+      'shoesBR' as database,
+      matviewname as name,
+      schemaname as schema,
+      'materialized_view' as type
+    from pg_matviews
+    where schemaname ilike 'intermediate'
+  
+[0m19:23:29.906535 [debug] [ThreadPool]: Opening a new connection, currently in state closed
+[0m19:23:31.414709 [debug] [ThreadPool]: SQL status: SELECT 4 in 1.508 seconds
+[0m19:23:31.420259 [debug] [ThreadPool]: On list_shoesBR_intermediate: ROLLBACK
+[0m19:23:31.571870 [debug] [ThreadPool]: On list_shoesBR_intermediate: Close
+[0m19:23:31.607657 [debug] [MainThread]: Using postgres connection "master"
+[0m19:23:31.610480 [debug] [MainThread]: On master: /* {"app": "dbt", "dbt_version": "1.11.7", "profile_name": "shoesbr", "target_name": "dev", "connection_name": "master"} */
+>>>>>>> dev
 select distinct
         dependent_namespace.nspname as dependent_schema,
         dependent_class.relname as dependent_name,
@@ -509,6 +894,7 @@ select distinct
 
     order by
         dependent_schema, dependent_name, referenced_schema, referenced_name;
+<<<<<<< HEAD
 [0m18:12:14.967034 [debug] [MainThread]: Opening a new connection, currently in state init
 [0m18:12:16.416940 [debug] [MainThread]: SQL status: SELECT 24 in 1.450 seconds
 [0m18:12:16.436972 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '07c75bfe-4abc-4c05-9d4a-eba566fa2128', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002C7A3651610>]}
@@ -531,6 +917,180 @@ select distinct
 [0m18:12:28.344727 [debug] [ThreadPool]: Acquiring new postgres connection 'shoesBR.information_schema'
 [0m18:12:28.363720 [debug] [ThreadPool]: Using postgres connection "shoesBR.information_schema"
 [0m18:12:28.364720 [debug] [ThreadPool]: On shoesBR.information_schema: /* {"app": "dbt", "dbt_version": "1.11.7", "profile_name": "shoesbr", "target_name": "dev", "connection_name": "shoesBR.information_schema"} */
+=======
+[0m19:23:31.612494 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m19:23:33.159758 [debug] [MainThread]: SQL status: SELECT 24 in 1.555 seconds
+[0m19:23:33.175380 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': 'd6b3e646-6f85-4c47-ba2f-534d3c2fc221', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000023E971977D0>]}
+[0m19:23:33.175380 [debug] [MainThread]: On master: ROLLBACK
+[0m19:23:33.342622 [debug] [MainThread]: On master: Close
+[0m19:23:33.360612 [debug] [Thread-1 (]: Began running node model.shoesbr.stg_clientes
+[0m19:23:33.364616 [debug] [Thread-1 (]: Acquiring new postgres connection 'model.shoesbr.stg_clientes'
+[0m19:23:33.366612 [debug] [Thread-1 (]: Began compiling node model.shoesbr.stg_clientes
+[0m19:23:33.404588 [debug] [Thread-1 (]: Writing injected SQL for node "model.shoesbr.stg_clientes"
+[0m19:23:33.410582 [debug] [Thread-1 (]: Began executing node model.shoesbr.stg_clientes
+[0m19:23:33.413581 [debug] [Thread-1 (]: Finished running node model.shoesbr.stg_clientes
+[0m19:23:33.415579 [debug] [Thread-1 (]: Began running node model.shoesbr.stg_produtos
+[0m19:23:33.417578 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly model.shoesbr.stg_clientes, now model.shoesbr.stg_produtos)
+[0m19:23:33.418577 [debug] [Thread-1 (]: Began compiling node model.shoesbr.stg_produtos
+[0m19:23:33.430572 [debug] [Thread-1 (]: Writing injected SQL for node "model.shoesbr.stg_produtos"
+[0m19:23:33.435569 [debug] [Thread-1 (]: Began executing node model.shoesbr.stg_produtos
+[0m19:23:33.438578 [debug] [Thread-1 (]: Finished running node model.shoesbr.stg_produtos
+[0m19:23:33.440568 [debug] [Thread-1 (]: Began running node model.shoesbr.stg_vendas
+[0m19:23:33.442566 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly model.shoesbr.stg_produtos, now model.shoesbr.stg_vendas)
+[0m19:23:33.444565 [debug] [Thread-1 (]: Began compiling node model.shoesbr.stg_vendas
+[0m19:23:33.459555 [debug] [Thread-1 (]: Writing injected SQL for node "model.shoesbr.stg_vendas"
+[0m19:23:33.485540 [debug] [Thread-1 (]: Began executing node model.shoesbr.stg_vendas
+[0m19:23:33.489540 [debug] [Thread-1 (]: Finished running node model.shoesbr.stg_vendas
+[0m19:23:33.491541 [debug] [Thread-1 (]: Began running node seed.shoesbr.estorno
+[0m19:23:33.493540 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly model.shoesbr.stg_vendas, now seed.shoesbr.estorno)
+[0m19:23:33.496535 [debug] [Thread-1 (]: Began compiling node seed.shoesbr.estorno
+[0m19:23:33.508531 [debug] [Thread-1 (]: Began executing node seed.shoesbr.estorno
+[0m19:23:33.511527 [debug] [Thread-1 (]: Finished running node seed.shoesbr.estorno
+[0m19:23:33.512527 [debug] [Thread-1 (]: Began running node test.shoesbr.not_null_stg_clientes_customer_id.455fe7c2cd
+[0m19:23:33.514525 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly seed.shoesbr.estorno, now test.shoesbr.not_null_stg_clientes_customer_id.455fe7c2cd)
+[0m19:23:33.515523 [debug] [Thread-1 (]: Began compiling node test.shoesbr.not_null_stg_clientes_customer_id.455fe7c2cd
+[0m19:23:33.548507 [debug] [Thread-1 (]: Writing injected SQL for node "test.shoesbr.not_null_stg_clientes_customer_id.455fe7c2cd"
+[0m19:23:33.552502 [debug] [Thread-1 (]: Began executing node test.shoesbr.not_null_stg_clientes_customer_id.455fe7c2cd
+[0m19:23:33.556500 [debug] [Thread-1 (]: Finished running node test.shoesbr.not_null_stg_clientes_customer_id.455fe7c2cd
+[0m19:23:33.558499 [debug] [Thread-1 (]: Began running node test.shoesbr.unique_stg_clientes_customer_id.4502584758
+[0m19:23:33.561499 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly test.shoesbr.not_null_stg_clientes_customer_id.455fe7c2cd, now test.shoesbr.unique_stg_clientes_customer_id.4502584758)
+[0m19:23:33.563495 [debug] [Thread-1 (]: Began compiling node test.shoesbr.unique_stg_clientes_customer_id.4502584758
+[0m19:23:33.596483 [debug] [Thread-1 (]: Writing injected SQL for node "test.shoesbr.unique_stg_clientes_customer_id.4502584758"
+[0m19:23:33.599476 [debug] [Thread-1 (]: Began executing node test.shoesbr.unique_stg_clientes_customer_id.4502584758
+[0m19:23:33.603476 [debug] [Thread-1 (]: Finished running node test.shoesbr.unique_stg_clientes_customer_id.4502584758
+[0m19:23:33.604473 [debug] [Thread-1 (]: Began running node test.shoesbr.not_null_stg_produtos_product_id.cb2e495773
+[0m19:23:33.606472 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly test.shoesbr.unique_stg_clientes_customer_id.4502584758, now test.shoesbr.not_null_stg_produtos_product_id.cb2e495773)
+[0m19:23:33.607474 [debug] [Thread-1 (]: Began compiling node test.shoesbr.not_null_stg_produtos_product_id.cb2e495773
+[0m19:23:33.627459 [debug] [Thread-1 (]: Writing injected SQL for node "test.shoesbr.not_null_stg_produtos_product_id.cb2e495773"
+[0m19:23:33.631456 [debug] [Thread-1 (]: Began executing node test.shoesbr.not_null_stg_produtos_product_id.cb2e495773
+[0m19:23:33.634459 [debug] [Thread-1 (]: Finished running node test.shoesbr.not_null_stg_produtos_product_id.cb2e495773
+[0m19:23:33.636455 [debug] [Thread-1 (]: Began running node test.shoesbr.unique_stg_produtos_product_id.478a2f9896
+[0m19:23:33.639455 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly test.shoesbr.not_null_stg_produtos_product_id.cb2e495773, now test.shoesbr.unique_stg_produtos_product_id.478a2f9896)
+[0m19:23:33.641454 [debug] [Thread-1 (]: Began compiling node test.shoesbr.unique_stg_produtos_product_id.478a2f9896
+[0m19:23:33.660442 [debug] [Thread-1 (]: Writing injected SQL for node "test.shoesbr.unique_stg_produtos_product_id.478a2f9896"
+[0m19:23:33.665439 [debug] [Thread-1 (]: Began executing node test.shoesbr.unique_stg_produtos_product_id.478a2f9896
+[0m19:23:33.668435 [debug] [Thread-1 (]: Finished running node test.shoesbr.unique_stg_produtos_product_id.478a2f9896
+[0m19:23:33.670435 [debug] [Thread-1 (]: Began running node model.shoesbr.int_clientes
+[0m19:23:33.672434 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly test.shoesbr.unique_stg_produtos_product_id.478a2f9896, now model.shoesbr.int_clientes)
+[0m19:23:33.673432 [debug] [Thread-1 (]: Began compiling node model.shoesbr.int_clientes
+[0m19:23:33.685425 [debug] [Thread-1 (]: Writing injected SQL for node "model.shoesbr.int_clientes"
+[0m19:23:33.690423 [debug] [Thread-1 (]: Began executing node model.shoesbr.int_clientes
+[0m19:23:33.693420 [debug] [Thread-1 (]: Finished running node model.shoesbr.int_clientes
+[0m19:23:33.694420 [debug] [Thread-1 (]: Began running node model.shoesbr.int_produtos
+[0m19:23:33.696418 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly model.shoesbr.int_clientes, now model.shoesbr.int_produtos)
+[0m19:23:33.697418 [debug] [Thread-1 (]: Began compiling node model.shoesbr.int_produtos
+[0m19:23:33.708414 [debug] [Thread-1 (]: Writing injected SQL for node "model.shoesbr.int_produtos"
+[0m19:23:33.711411 [debug] [Thread-1 (]: Began executing node model.shoesbr.int_produtos
+[0m19:23:33.715409 [debug] [Thread-1 (]: Finished running node model.shoesbr.int_produtos
+[0m19:23:33.717409 [debug] [Thread-1 (]: Began running node test.shoesbr.not_null_stg_vendas_customer_id.26b71c4d9c
+[0m19:23:33.720407 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly model.shoesbr.int_produtos, now test.shoesbr.not_null_stg_vendas_customer_id.26b71c4d9c)
+[0m19:23:33.721405 [debug] [Thread-1 (]: Began compiling node test.shoesbr.not_null_stg_vendas_customer_id.26b71c4d9c
+[0m19:23:33.742394 [debug] [Thread-1 (]: Writing injected SQL for node "test.shoesbr.not_null_stg_vendas_customer_id.26b71c4d9c"
+[0m19:23:33.746394 [debug] [Thread-1 (]: Began executing node test.shoesbr.not_null_stg_vendas_customer_id.26b71c4d9c
+[0m19:23:33.750390 [debug] [Thread-1 (]: Finished running node test.shoesbr.not_null_stg_vendas_customer_id.26b71c4d9c
+[0m19:23:33.752387 [debug] [Thread-1 (]: Began running node test.shoesbr.not_null_stg_vendas_product_id.05982355e4
+[0m19:23:33.755388 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly test.shoesbr.not_null_stg_vendas_customer_id.26b71c4d9c, now test.shoesbr.not_null_stg_vendas_product_id.05982355e4)
+[0m19:23:33.757385 [debug] [Thread-1 (]: Began compiling node test.shoesbr.not_null_stg_vendas_product_id.05982355e4
+[0m19:23:33.777376 [debug] [Thread-1 (]: Writing injected SQL for node "test.shoesbr.not_null_stg_vendas_product_id.05982355e4"
+[0m19:23:33.781370 [debug] [Thread-1 (]: Began executing node test.shoesbr.not_null_stg_vendas_product_id.05982355e4
+[0m19:23:33.791368 [debug] [Thread-1 (]: Finished running node test.shoesbr.not_null_stg_vendas_product_id.05982355e4
+[0m19:23:33.793365 [debug] [Thread-1 (]: Began running node test.shoesbr.not_null_stg_vendas_purchase_id.017ace8778
+[0m19:23:33.795363 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly test.shoesbr.not_null_stg_vendas_product_id.05982355e4, now test.shoesbr.not_null_stg_vendas_purchase_id.017ace8778)
+[0m19:23:33.797364 [debug] [Thread-1 (]: Began compiling node test.shoesbr.not_null_stg_vendas_purchase_id.017ace8778
+[0m19:23:33.814355 [debug] [Thread-1 (]: Writing injected SQL for node "test.shoesbr.not_null_stg_vendas_purchase_id.017ace8778"
+[0m19:23:33.817350 [debug] [Thread-1 (]: Began executing node test.shoesbr.not_null_stg_vendas_purchase_id.017ace8778
+[0m19:23:33.820350 [debug] [Thread-1 (]: Finished running node test.shoesbr.not_null_stg_vendas_purchase_id.017ace8778
+[0m19:23:33.822347 [debug] [Thread-1 (]: Began running node test.shoesbr.relationships_stg_vendas_customer_id__customer_id__ref_stg_clientes_.5f6facf66a
+[0m19:23:33.824348 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly test.shoesbr.not_null_stg_vendas_purchase_id.017ace8778, now test.shoesbr.relationships_stg_vendas_customer_id__customer_id__ref_stg_clientes_.5f6facf66a)
+[0m19:23:33.825348 [debug] [Thread-1 (]: Began compiling node test.shoesbr.relationships_stg_vendas_customer_id__customer_id__ref_stg_clientes_.5f6facf66a
+[0m19:23:33.835458 [debug] [Thread-1 (]: Writing injected SQL for node "test.shoesbr.relationships_stg_vendas_customer_id__customer_id__ref_stg_clientes_.5f6facf66a"
+[0m19:23:33.835458 [debug] [Thread-1 (]: Began executing node test.shoesbr.relationships_stg_vendas_customer_id__customer_id__ref_stg_clientes_.5f6facf66a
+[0m19:23:33.851082 [debug] [Thread-1 (]: Finished running node test.shoesbr.relationships_stg_vendas_customer_id__customer_id__ref_stg_clientes_.5f6facf66a
+[0m19:23:33.851082 [debug] [Thread-1 (]: Began running node test.shoesbr.relationships_stg_vendas_product_id__product_id__ref_stg_produtos_.1ff89a1ffb
+[0m19:23:33.851082 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly test.shoesbr.relationships_stg_vendas_customer_id__customer_id__ref_stg_clientes_.5f6facf66a, now test.shoesbr.relationships_stg_vendas_product_id__product_id__ref_stg_produtos_.1ff89a1ffb)
+[0m19:23:33.851082 [debug] [Thread-1 (]: Began compiling node test.shoesbr.relationships_stg_vendas_product_id__product_id__ref_stg_produtos_.1ff89a1ffb
+[0m19:23:33.866711 [debug] [Thread-1 (]: Writing injected SQL for node "test.shoesbr.relationships_stg_vendas_product_id__product_id__ref_stg_produtos_.1ff89a1ffb"
+[0m19:23:33.866711 [debug] [Thread-1 (]: Began executing node test.shoesbr.relationships_stg_vendas_product_id__product_id__ref_stg_produtos_.1ff89a1ffb
+[0m19:23:33.882467 [debug] [Thread-1 (]: Finished running node test.shoesbr.relationships_stg_vendas_product_id__product_id__ref_stg_produtos_.1ff89a1ffb
+[0m19:23:33.884466 [debug] [Thread-1 (]: Began running node test.shoesbr.unique_stg_vendas_purchase_id.1b7f8e5d19
+[0m19:23:33.886466 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly test.shoesbr.relationships_stg_vendas_product_id__product_id__ref_stg_produtos_.1ff89a1ffb, now test.shoesbr.unique_stg_vendas_purchase_id.1b7f8e5d19)
+[0m19:23:33.888464 [debug] [Thread-1 (]: Began compiling node test.shoesbr.unique_stg_vendas_purchase_id.1b7f8e5d19
+[0m19:23:33.906453 [debug] [Thread-1 (]: Writing injected SQL for node "test.shoesbr.unique_stg_vendas_purchase_id.1b7f8e5d19"
+[0m19:23:33.909451 [debug] [Thread-1 (]: Began executing node test.shoesbr.unique_stg_vendas_purchase_id.1b7f8e5d19
+[0m19:23:33.913450 [debug] [Thread-1 (]: Finished running node test.shoesbr.unique_stg_vendas_purchase_id.1b7f8e5d19
+[0m19:23:33.915450 [debug] [Thread-1 (]: Began running node model.shoesbr.stg_estorno
+[0m19:23:33.916450 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly test.shoesbr.unique_stg_vendas_purchase_id.1b7f8e5d19, now model.shoesbr.stg_estorno)
+[0m19:23:33.918449 [debug] [Thread-1 (]: Began compiling node model.shoesbr.stg_estorno
+[0m19:23:33.934441 [debug] [Thread-1 (]: Writing injected SQL for node "model.shoesbr.stg_estorno"
+[0m19:23:33.938435 [debug] [Thread-1 (]: Began executing node model.shoesbr.stg_estorno
+[0m19:23:33.941435 [debug] [Thread-1 (]: Finished running node model.shoesbr.stg_estorno
+[0m19:23:33.944432 [debug] [Thread-1 (]: Began running node model.shoesbr.int_estorno
+[0m19:23:33.946433 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly model.shoesbr.stg_estorno, now model.shoesbr.int_estorno)
+[0m19:23:33.947434 [debug] [Thread-1 (]: Began compiling node model.shoesbr.int_estorno
+[0m19:23:33.958426 [debug] [Thread-1 (]: Writing injected SQL for node "model.shoesbr.int_estorno"
+[0m19:23:33.962420 [debug] [Thread-1 (]: Began executing node model.shoesbr.int_estorno
+[0m19:23:33.966419 [debug] [Thread-1 (]: Finished running node model.shoesbr.int_estorno
+[0m19:23:33.967419 [debug] [Thread-1 (]: Began running node model.shoesbr.int_vendas
+[0m19:23:33.969417 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly model.shoesbr.int_estorno, now model.shoesbr.int_vendas)
+[0m19:23:33.971417 [debug] [Thread-1 (]: Began compiling node model.shoesbr.int_vendas
+[0m19:23:33.985408 [debug] [Thread-1 (]: Writing injected SQL for node "model.shoesbr.int_vendas"
+[0m19:23:33.990406 [debug] [Thread-1 (]: Began executing node model.shoesbr.int_vendas
+[0m19:23:33.993404 [debug] [Thread-1 (]: Finished running node model.shoesbr.int_vendas
+[0m19:23:33.994408 [debug] [Thread-1 (]: Began running node test.shoesbr.accepted_values_stg_estorno_refund_reason__Produto_com_defeito__Arrependimento__Entrega_Atrasada__Produto_Incorreto.323ea2430b
+[0m19:23:33.997401 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly model.shoesbr.int_vendas, now test.shoesbr.accepted_values_stg_estorno_refund_reason__Produto_com_defeito__Arrependimento__Entrega_Atrasada__Produto_Incorreto.323ea2430b)
+[0m19:23:33.999401 [debug] [Thread-1 (]: Began compiling node test.shoesbr.accepted_values_stg_estorno_refund_reason__Produto_com_defeito__Arrependimento__Entrega_Atrasada__Produto_Incorreto.323ea2430b
+[0m19:23:34.021147 [debug] [Thread-1 (]: Writing injected SQL for node "test.shoesbr.accepted_values_stg_estorno_refund_reason__Produto_com_defeito__Arrependimento__Entrega_Atrasada__Produto_Incorreto.323ea2430b"
+[0m19:23:34.025144 [debug] [Thread-1 (]: Began executing node test.shoesbr.accepted_values_stg_estorno_refund_reason__Produto_com_defeito__Arrependimento__Entrega_Atrasada__Produto_Incorreto.323ea2430b
+[0m19:23:34.029142 [debug] [Thread-1 (]: Finished running node test.shoesbr.accepted_values_stg_estorno_refund_reason__Produto_com_defeito__Arrependimento__Entrega_Atrasada__Produto_Incorreto.323ea2430b
+[0m19:23:34.032028 [debug] [Thread-1 (]: Began running node test.shoesbr.relationships_stg_estorno_customer_id__customer_id__ref_stg_clientes_.ea284c6ec6
+[0m19:23:34.034028 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly test.shoesbr.accepted_values_stg_estorno_refund_reason__Produto_com_defeito__Arrependimento__Entrega_Atrasada__Produto_Incorreto.323ea2430b, now test.shoesbr.relationships_stg_estorno_customer_id__customer_id__ref_stg_clientes_.ea284c6ec6)
+[0m19:23:34.036029 [debug] [Thread-1 (]: Began compiling node test.shoesbr.relationships_stg_estorno_customer_id__customer_id__ref_stg_clientes_.ea284c6ec6
+[0m19:23:34.060282 [debug] [Thread-1 (]: Writing injected SQL for node "test.shoesbr.relationships_stg_estorno_customer_id__customer_id__ref_stg_clientes_.ea284c6ec6"
+[0m19:23:34.064155 [debug] [Thread-1 (]: Began executing node test.shoesbr.relationships_stg_estorno_customer_id__customer_id__ref_stg_clientes_.ea284c6ec6
+[0m19:23:34.066362 [debug] [Thread-1 (]: Finished running node test.shoesbr.relationships_stg_estorno_customer_id__customer_id__ref_stg_clientes_.ea284c6ec6
+[0m19:23:34.068359 [debug] [Thread-1 (]: Began running node test.shoesbr.relationships_stg_estorno_product_id__product_id__ref_stg_produtos_.d796ad7361
+[0m19:23:34.070708 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly test.shoesbr.relationships_stg_estorno_customer_id__customer_id__ref_stg_clientes_.ea284c6ec6, now test.shoesbr.relationships_stg_estorno_product_id__product_id__ref_stg_produtos_.d796ad7361)
+[0m19:23:34.072711 [debug] [Thread-1 (]: Began compiling node test.shoesbr.relationships_stg_estorno_product_id__product_id__ref_stg_produtos_.d796ad7361
+[0m19:23:34.093149 [debug] [Thread-1 (]: Writing injected SQL for node "test.shoesbr.relationships_stg_estorno_product_id__product_id__ref_stg_produtos_.d796ad7361"
+[0m19:23:34.097148 [debug] [Thread-1 (]: Began executing node test.shoesbr.relationships_stg_estorno_product_id__product_id__ref_stg_produtos_.d796ad7361
+[0m19:23:34.100146 [debug] [Thread-1 (]: Finished running node test.shoesbr.relationships_stg_estorno_product_id__product_id__ref_stg_produtos_.d796ad7361
+[0m19:23:34.101148 [debug] [Thread-1 (]: Began running node test.shoesbr.relationships_stg_estorno_purchase_id__purchase_id__ref_stg_vendas_.0b57cd4ef9
+[0m19:23:34.103146 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly test.shoesbr.relationships_stg_estorno_product_id__product_id__ref_stg_produtos_.d796ad7361, now test.shoesbr.relationships_stg_estorno_purchase_id__purchase_id__ref_stg_vendas_.0b57cd4ef9)
+[0m19:23:34.105145 [debug] [Thread-1 (]: Began compiling node test.shoesbr.relationships_stg_estorno_purchase_id__purchase_id__ref_stg_vendas_.0b57cd4ef9
+[0m19:23:34.124133 [debug] [Thread-1 (]: Writing injected SQL for node "test.shoesbr.relationships_stg_estorno_purchase_id__purchase_id__ref_stg_vendas_.0b57cd4ef9"
+[0m19:23:34.128131 [debug] [Thread-1 (]: Began executing node test.shoesbr.relationships_stg_estorno_purchase_id__purchase_id__ref_stg_vendas_.0b57cd4ef9
+[0m19:23:34.131130 [debug] [Thread-1 (]: Finished running node test.shoesbr.relationships_stg_estorno_purchase_id__purchase_id__ref_stg_vendas_.0b57cd4ef9
+[0m19:23:34.133128 [debug] [Thread-1 (]: Began running node model.shoesbr.dim_clientes
+[0m19:23:34.136127 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly test.shoesbr.relationships_stg_estorno_purchase_id__purchase_id__ref_stg_vendas_.0b57cd4ef9, now model.shoesbr.dim_clientes)
+[0m19:23:34.138126 [debug] [Thread-1 (]: Began compiling node model.shoesbr.dim_clientes
+[0m19:23:34.155124 [debug] [Thread-1 (]: Writing injected SQL for node "model.shoesbr.dim_clientes"
+[0m19:23:34.160112 [debug] [Thread-1 (]: Began executing node model.shoesbr.dim_clientes
+[0m19:23:34.164109 [debug] [Thread-1 (]: Finished running node model.shoesbr.dim_clientes
+[0m19:23:34.166108 [debug] [Thread-1 (]: Began running node model.shoesbr.dim_produtos
+[0m19:23:34.168110 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly model.shoesbr.dim_clientes, now model.shoesbr.dim_produtos)
+[0m19:23:34.171108 [debug] [Thread-1 (]: Began compiling node model.shoesbr.dim_produtos
+[0m19:23:34.187109 [debug] [Thread-1 (]: Writing injected SQL for node "model.shoesbr.dim_produtos"
+[0m19:23:34.192098 [debug] [Thread-1 (]: Began executing node model.shoesbr.dim_produtos
+[0m19:23:34.195095 [debug] [Thread-1 (]: Finished running node model.shoesbr.dim_produtos
+[0m19:23:34.196093 [debug] [Thread-1 (]: Began running node model.shoesbr.fct_vendas
+[0m19:23:34.198093 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly model.shoesbr.dim_produtos, now model.shoesbr.fct_vendas)
+[0m19:23:34.199093 [debug] [Thread-1 (]: Began compiling node model.shoesbr.fct_vendas
+[0m19:23:34.210085 [debug] [Thread-1 (]: Writing injected SQL for node "model.shoesbr.fct_vendas"
+[0m19:23:34.215149 [debug] [Thread-1 (]: Began executing node model.shoesbr.fct_vendas
+[0m19:23:34.217151 [debug] [Thread-1 (]: Finished running node model.shoesbr.fct_vendas
+[0m19:23:34.220145 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m19:23:34.222145 [debug] [MainThread]: Connection 'list_shoesBR_intermediate' was properly closed.
+[0m19:23:34.224145 [debug] [MainThread]: Connection 'model.shoesbr.fct_vendas' was properly closed.
+[0m19:23:34.239136 [debug] [MainThread]: Command end result
+[0m19:23:34.880770 [debug] [MainThread]: Wrote artifact WritableManifest to C:\Users\fdani\project_shoesbr\target\manifest.json
+[0m19:23:34.890761 [debug] [MainThread]: Wrote artifact SemanticManifest to C:\Users\fdani\project_shoesbr\target\semantic_manifest.json
+[0m19:23:34.922743 [debug] [MainThread]: Wrote artifact RunExecutionResult to C:\Users\fdani\project_shoesbr\target\run_results.json
+[0m19:23:34.930740 [debug] [MainThread]: Acquiring new postgres connection 'generate_catalog'
+[0m19:23:34.932741 [info ] [MainThread]: Building catalog
+[0m19:23:34.990715 [debug] [ThreadPool]: Acquiring new postgres connection 'shoesBR.information_schema'
+[0m19:23:35.025685 [debug] [ThreadPool]: Using postgres connection "shoesBR.information_schema"
+[0m19:23:35.027687 [debug] [ThreadPool]: On shoesBR.information_schema: /* {"app": "dbt", "dbt_version": "1.11.7", "profile_name": "shoesbr", "target_name": "dev", "connection_name": "shoesBR.information_schema"} */
+>>>>>>> dev
 
     
     
@@ -556,8 +1116,27 @@ select distinct
     join pg_catalog.pg_attribute col on col.attrelid = tbl.oid
     left outer join pg_catalog.pg_description tbl_desc on (tbl_desc.objoid = tbl.oid and tbl_desc.objsubid = 0)
     left outer join pg_catalog.pg_description col_desc on (col_desc.objoid = tbl.oid and col_desc.objsubid = col.attnum)
+<<<<<<< HEAD
     where ((upper(sch.nspname) = upper('landing') and
            upper(tbl.relname) = upper('estorno')))
+=======
+    where ((upper(sch.nspname) = upper('staging') and
+           upper(tbl.relname) = upper('stg_clientes')) or (upper(sch.nspname) = upper('intermediate') and
+           upper(tbl.relname) = upper('int_clientes')) or (upper(sch.nspname) = upper('staging') and
+           upper(tbl.relname) = upper('stg_estorno')) or (upper(sch.nspname) = upper('intermediate') and
+           upper(tbl.relname) = upper('int_estorno')) or (upper(sch.nspname) = upper('marts') and
+           upper(tbl.relname) = upper('dim_produtos')) or (upper(sch.nspname) = upper('staging') and
+           upper(tbl.relname) = upper('stg_produtos')) or (upper(sch.nspname) = upper('landing') and
+           upper(tbl.relname) = upper('estorno')) or (upper(sch.nspname) = upper('marts') and
+           upper(tbl.relname) = upper('fct_vendas')) or (upper(sch.nspname) = upper('intermediate') and
+           upper(tbl.relname) = upper('int_produtos')) or (upper(sch.nspname) = upper('intermediate') and
+           upper(tbl.relname) = upper('int_vendas')) or (upper(sch.nspname) = upper('landing') and
+           upper(tbl.relname) = upper('clientes')) or (upper(sch.nspname) = upper('marts') and
+           upper(tbl.relname) = upper('dim_clientes')) or (upper(sch.nspname) = upper('landing') and
+           upper(tbl.relname) = upper('produtos')) or (upper(sch.nspname) = upper('landing') and
+           upper(tbl.relname) = upper('vendas')) or (upper(sch.nspname) = upper('staging') and
+           upper(tbl.relname) = upper('stg_vendas')))
+>>>>>>> dev
       and not pg_is_other_temp_schema(sch.oid) -- not a temporary schema belonging to another session
       and tbl.relpersistence in ('p', 'u') -- [p]ermanent table or [u]nlogged table. Exclude [t]emporary tables
       and tbl.relkind in ('r', 'v', 'f', 'p', 'm') -- o[r]dinary table, [v]iew, [f]oreign table, [p]artitioned table, [m]aterialized view. Other values are [i]ndex, [S]equence, [c]omposite type, [t]OAST table
@@ -568,6 +1147,7 @@ select distinct
         sch.nspname,
         tbl.relname,
         col.attnum
+<<<<<<< HEAD
 [0m18:12:28.365719 [debug] [ThreadPool]: Opening a new connection, currently in state init
 [0m18:12:30.351511 [debug] [ThreadPool]: SQL status: SELECT 6 in 1.985 seconds
 [0m18:12:30.362515 [debug] [ThreadPool]: On shoesBR.information_schema: ROLLBACK
@@ -593,6 +1173,40 @@ select distinct
 [0m18:24:58.975103 [error] [MainThread]: Encountered an error:
 
 [0m18:24:59.067214 [error] [MainThread]: Traceback (most recent call last):
+=======
+[0m19:23:35.028686 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m19:23:36.527254 [debug] [ThreadPool]: SQL status: SELECT 100 in 1.498 seconds
+[0m19:23:36.549241 [debug] [ThreadPool]: On shoesBR.information_schema: ROLLBACK
+[0m19:23:36.698156 [debug] [ThreadPool]: On shoesBR.information_schema: Close
+[0m19:23:36.766118 [debug] [MainThread]: Wrote artifact CatalogArtifact to C:\Users\fdani\project_shoesbr\target\catalog.json
+[0m19:23:36.906387 [debug] [MainThread]: Wrote artifact WritableManifest to C:\Users\fdani\project_shoesbr\target\manifest.json
+[0m19:23:36.922011 [debug] [MainThread]: Wrote artifact SemanticManifest to C:\Users\fdani\project_shoesbr\target\semantic_manifest.json
+[0m19:23:36.922011 [info ] [MainThread]: Catalog written to C:\Users\fdani\project_shoesbr\target\catalog.json
+[0m19:23:36.922011 [warn ] [MainThread]: [[33mWARNING[0m][DeprecationsSummary]: Deprecated functionality
+Summary of encountered deprecations:
+- MissingArgumentsPropertyInGenericTestDeprecation: 1 occurrence
+To see all deprecation instances instead of just the first occurrence of each,
+run command again with the `--show-all-deprecations` flag. You may also need to
+run with `--no-partial-parse` as some deprecations are only encountered during
+parsing.
+[0m19:23:36.937636 [debug] [MainThread]: Command `dbt docs generate` succeeded at 19:23:36.937636 after 22.43 seconds
+[0m19:23:36.937636 [debug] [MainThread]: Connection 'generate_catalog' was properly closed.
+[0m19:23:36.937636 [debug] [MainThread]: Connection 'shoesBR.information_schema' was properly closed.
+[0m19:23:36.937636 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000023E92E35910>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000023E92E35820>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000023E95094350>]}
+[0m19:23:36.937636 [debug] [MainThread]: Flushing usage events
+[0m19:23:39.670419 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m19:24:02.114441 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000019783EEB980>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000019784CCFDD0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000019787578110>]}
+
+
+============================== 19:24:02.139426 | cc86360a-87c6-4f66-a7da-ea1a3b14a6ca ==============================
+[0m19:24:02.139426 [info ] [MainThread]: Running with dbt=1.11.7
+[0m19:24:02.142423 [debug] [MainThread]: running dbt with arguments {'static_parser': 'True', 'no_print': 'None', 'version_check': 'True', 'target_path': 'None', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'printer_width': '80', 'write_json': 'True', 'introspect': 'True', 'log_cache_events': 'False', 'empty': 'None', 'cache_selected_only': 'False', 'fail_fast': 'False', 'debug': 'False', 'log_format': 'default', 'partial_parse': 'True', 'send_anonymous_usage_stats': 'True', 'quiet': 'False', 'warn_error': 'None', 'profiles_dir': 'C:\\Users\\fdani\\.dbt', 'indirect_selection': 'eager', 'invocation_command': 'dbt docs serve', 'use_colors': 'True', 'use_experimental_parser': 'False', 'log_path': 'C:\\Users\\fdani\\project_shoesbr\\logs'}
+[0m19:24:03.195156 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': 'cc86360a-87c6-4f66-a7da-ea1a3b14a6ca', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000019788FCE150>]}
+[0m19:24:03.478992 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': 'cc86360a-87c6-4f66-a7da-ea1a3b14a6ca', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000019786FA08F0>]}
+[0m19:26:48.881533 [error] [MainThread]: Encountered an error:
+
+[0m19:26:48.890535 [error] [MainThread]: Traceback (most recent call last):
+>>>>>>> dev
   File "C:\Users\fdani\project_shoesbr\.venv\Lib\site-packages\dbt\cli\requires.py", line 182, in wrapper
     result, success = func(*args, **kwargs)
                       ^^^^^^^^^^^^^^^^^^^^^
@@ -624,7 +1238,511 @@ select distinct
               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 KeyboardInterrupt
 
+<<<<<<< HEAD
 [0m18:24:59.070233 [debug] [MainThread]: Command `dbt docs serve` failed at 18:24:59.069234 after 723.57 seconds
 [0m18:24:59.071233 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000024437DD3D10>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002443982E750>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002443996F4A0>]}
 [0m18:24:59.072232 [debug] [MainThread]: Flushing usage events
 [0m18:25:00.432606 [debug] [MainThread]: An error was encountered while trying to flush usage events
+=======
+[0m19:26:48.894525 [debug] [MainThread]: Command `dbt docs serve` failed at 19:26:48.894525 after 167.25 seconds
+[0m19:26:48.895525 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000019783EEB980>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000197890C19A0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000019788FF7D70>]}
+[0m19:26:48.897524 [debug] [MainThread]: Flushing usage events
+[0m19:26:50.912944 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m19:27:03.027564 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002D48D33DBE0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002D48CF0C740>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002D48CD24350>]}
+
+
+============================== 19:27:03.046562 | 5a1c7d7c-21a4-4ff6-b35d-5f7a97c28089 ==============================
+[0m19:27:03.046562 [info ] [MainThread]: Running with dbt=1.11.7
+[0m19:27:03.049555 [debug] [MainThread]: running dbt with arguments {'version_check': 'True', 'no_print': 'None', 'static_parser': 'True', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'target_path': 'None', 'printer_width': '80', 'write_json': 'True', 'introspect': 'True', 'log_cache_events': 'False', 'empty': 'None', 'cache_selected_only': 'False', 'fail_fast': 'False', 'debug': 'False', 'log_format': 'default', 'profiles_dir': 'C:\\Users\\fdani\\.dbt', 'send_anonymous_usage_stats': 'True', 'quiet': 'False', 'warn_error': 'None', 'partial_parse': 'True', 'use_colors': 'True', 'invocation_command': 'dbt clean', 'indirect_selection': 'eager', 'use_experimental_parser': 'False', 'log_path': 'C:\\Users\\fdani\\project_shoesbr\\logs'}
+[0m19:27:03.600493 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '5a1c7d7c-21a4-4ff6-b35d-5f7a97c28089', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002D48D6220F0>]}
+[0m19:27:03.717424 [debug] [MainThread]: Command `dbt clean` succeeded at 19:27:03.717424 after 1.20 seconds
+[0m19:27:03.719425 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002D48D1B38C0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002D48D489700>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002D48EAB3830>]}
+[0m19:27:03.726423 [debug] [MainThread]: Flushing usage events
+[0m19:27:05.240961 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m19:27:26.790261 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001FDDA9F5D00>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001FDDDC642C0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001FDDDC64260>]}
+
+
+============================== 19:27:26.795385 | ef05b839-ba9d-480d-aae7-29e495534bfe ==============================
+[0m19:27:26.795385 [info ] [MainThread]: Running with dbt=1.11.7
+[0m19:27:26.795385 [debug] [MainThread]: running dbt with arguments {'static_parser': 'True', 'no_print': 'None', 'version_check': 'True', 'target_path': 'None', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'printer_width': '80', 'write_json': 'True', 'empty': 'None', 'log_cache_events': 'False', 'introspect': 'True', 'cache_selected_only': 'False', 'log_format': 'default', 'debug': 'False', 'fail_fast': 'False', 'partial_parse': 'True', 'send_anonymous_usage_stats': 'True', 'quiet': 'False', 'warn_error': 'None', 'profiles_dir': 'C:\\Users\\fdani\\.dbt', 'invocation_command': 'dbt docs generate', 'use_colors': 'True', 'indirect_selection': 'eager', 'use_experimental_parser': 'False', 'log_path': 'C:\\Users\\fdani\\project_shoesbr\\logs'}
+[0m19:27:27.542716 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': 'ef05b839-ba9d-480d-aae7-29e495534bfe', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001FDDDC15280>]}
+[0m19:27:27.790561 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': 'ef05b839-ba9d-480d-aae7-29e495534bfe', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001FDDB71FF20>]}
+[0m19:27:27.794556 [info ] [MainThread]: Registered adapter: postgres=1.10.0
+[0m19:27:28.616136 [debug] [MainThread]: checksum: b80718358155fc17c3559352095564dd56ada1cc1a1c0ef2e62c857e71583775, vars: {}, profile: , target: , version: 1.11.7
+[0m19:27:28.619129 [info ] [MainThread]: Unable to do partial parsing because saved manifest not found. Starting full parse.
+[0m19:27:28.621129 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'partial_parser', 'label': 'ef05b839-ba9d-480d-aae7-29e495534bfe', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001FDDFDAFBC0>]}
+[0m19:27:34.062704 [warn ] [MainThread]: [[33mWARNING[0m][MissingArgumentsPropertyInGenericTestDeprecation]: Deprecated
+functionality
+Found top-level arguments to test `accepted_values` defined on 'stg_estorno' in
+package 'shoesbr' (shoesbr/models\staging\schema.yml). Arguments to generic
+tests should be nested under the `arguments` property.
+[0m19:27:34.064694 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'deprecation', 'label': 'ef05b839-ba9d-480d-aae7-29e495534bfe', 'property_': 'warn', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001FDE02E1160>]}
+[0m19:27:34.662642 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': 'ef05b839-ba9d-480d-aae7-29e495534bfe', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001FDE04D5CA0>]}
+[0m19:27:34.764584 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': 'ef05b839-ba9d-480d-aae7-29e495534bfe', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001FDE0482F30>]}
+[0m19:27:34.765588 [info ] [MainThread]: Found 11 models, 1 seed, 14 data tests, 4 sources, 466 macros
+[0m19:27:34.767585 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': 'ef05b839-ba9d-480d-aae7-29e495534bfe', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001FDE025B4A0>]}
+[0m19:27:34.776587 [info ] [MainThread]: 
+[0m19:27:34.778574 [info ] [MainThread]: Concurrency: 1 threads (target='dev')
+[0m19:27:34.780572 [info ] [MainThread]: 
+[0m19:27:34.783573 [debug] [MainThread]: Acquiring new postgres connection 'master'
+[0m19:27:34.804559 [debug] [ThreadPool]: Acquiring new postgres connection 'list_shoesBR_landing'
+[0m19:27:35.053422 [debug] [ThreadPool]: Using postgres connection "list_shoesBR_landing"
+[0m19:27:35.054425 [debug] [ThreadPool]: On list_shoesBR_landing: /* {"app": "dbt", "dbt_version": "1.11.7", "profile_name": "shoesbr", "target_name": "dev", "connection_name": "list_shoesBR_landing"} */
+select
+      'shoesBR' as database,
+      tablename as name,
+      schemaname as schema,
+      'table' as type
+    from pg_tables
+    where schemaname ilike 'landing'
+    union all
+    select
+      'shoesBR' as database,
+      viewname as name,
+      schemaname as schema,
+      'view' as type
+    from pg_views
+    where schemaname ilike 'landing'
+    union all
+    select
+      'shoesBR' as database,
+      matviewname as name,
+      schemaname as schema,
+      'materialized_view' as type
+    from pg_matviews
+    where schemaname ilike 'landing'
+  
+[0m19:27:35.056426 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m19:27:36.581108 [debug] [ThreadPool]: SQL status: SELECT 7 in 1.535 seconds
+[0m19:27:36.599504 [debug] [ThreadPool]: On list_shoesBR_landing: ROLLBACK
+[0m19:27:36.756456 [debug] [ThreadPool]: On list_shoesBR_landing: Close
+[0m19:27:36.764212 [debug] [ThreadPool]: Re-using an available connection from the pool (formerly list_shoesBR_landing, now list_shoesBR_marts)
+[0m19:27:36.777209 [debug] [ThreadPool]: Using postgres connection "list_shoesBR_marts"
+[0m19:27:36.778205 [debug] [ThreadPool]: On list_shoesBR_marts: /* {"app": "dbt", "dbt_version": "1.11.7", "profile_name": "shoesbr", "target_name": "dev", "connection_name": "list_shoesBR_marts"} */
+select
+      'shoesBR' as database,
+      tablename as name,
+      schemaname as schema,
+      'table' as type
+    from pg_tables
+    where schemaname ilike 'marts'
+    union all
+    select
+      'shoesBR' as database,
+      viewname as name,
+      schemaname as schema,
+      'view' as type
+    from pg_views
+    where schemaname ilike 'marts'
+    union all
+    select
+      'shoesBR' as database,
+      matviewname as name,
+      schemaname as schema,
+      'materialized_view' as type
+    from pg_matviews
+    where schemaname ilike 'marts'
+  
+[0m19:27:36.780205 [debug] [ThreadPool]: Opening a new connection, currently in state closed
+[0m19:27:39.362972 [debug] [ThreadPool]: SQL status: SELECT 3 in 2.582 seconds
+[0m19:27:39.369968 [debug] [ThreadPool]: On list_shoesBR_marts: ROLLBACK
+[0m19:27:39.525881 [debug] [ThreadPool]: On list_shoesBR_marts: Close
+[0m19:27:39.527881 [debug] [ThreadPool]: Re-using an available connection from the pool (formerly list_shoesBR_marts, now list_shoesBR_staging)
+[0m19:27:39.540868 [debug] [ThreadPool]: Using postgres connection "list_shoesBR_staging"
+[0m19:27:39.542868 [debug] [ThreadPool]: On list_shoesBR_staging: /* {"app": "dbt", "dbt_version": "1.11.7", "profile_name": "shoesbr", "target_name": "dev", "connection_name": "list_shoesBR_staging"} */
+select
+      'shoesBR' as database,
+      tablename as name,
+      schemaname as schema,
+      'table' as type
+    from pg_tables
+    where schemaname ilike 'staging'
+    union all
+    select
+      'shoesBR' as database,
+      viewname as name,
+      schemaname as schema,
+      'view' as type
+    from pg_views
+    where schemaname ilike 'staging'
+    union all
+    select
+      'shoesBR' as database,
+      matviewname as name,
+      schemaname as schema,
+      'materialized_view' as type
+    from pg_matviews
+    where schemaname ilike 'staging'
+  
+[0m19:27:39.545866 [debug] [ThreadPool]: Opening a new connection, currently in state closed
+[0m19:27:40.995940 [debug] [ThreadPool]: SQL status: SELECT 4 in 1.450 seconds
+[0m19:27:40.995940 [debug] [ThreadPool]: On list_shoesBR_staging: ROLLBACK
+[0m19:27:41.153613 [debug] [ThreadPool]: On list_shoesBR_staging: Close
+[0m19:27:41.155592 [debug] [ThreadPool]: Re-using an available connection from the pool (formerly list_shoesBR_staging, now list_shoesBR_intermediate)
+[0m19:27:41.164585 [debug] [ThreadPool]: Using postgres connection "list_shoesBR_intermediate"
+[0m19:27:41.165590 [debug] [ThreadPool]: On list_shoesBR_intermediate: /* {"app": "dbt", "dbt_version": "1.11.7", "profile_name": "shoesbr", "target_name": "dev", "connection_name": "list_shoesBR_intermediate"} */
+select
+      'shoesBR' as database,
+      tablename as name,
+      schemaname as schema,
+      'table' as type
+    from pg_tables
+    where schemaname ilike 'intermediate'
+    union all
+    select
+      'shoesBR' as database,
+      viewname as name,
+      schemaname as schema,
+      'view' as type
+    from pg_views
+    where schemaname ilike 'intermediate'
+    union all
+    select
+      'shoesBR' as database,
+      matviewname as name,
+      schemaname as schema,
+      'materialized_view' as type
+    from pg_matviews
+    where schemaname ilike 'intermediate'
+  
+[0m19:27:41.166588 [debug] [ThreadPool]: Opening a new connection, currently in state closed
+[0m19:27:42.625544 [debug] [ThreadPool]: SQL status: SELECT 4 in 1.459 seconds
+[0m19:27:42.632523 [debug] [ThreadPool]: On list_shoesBR_intermediate: ROLLBACK
+[0m19:27:42.788434 [debug] [ThreadPool]: On list_shoesBR_intermediate: Close
+[0m19:27:42.812414 [debug] [MainThread]: Using postgres connection "master"
+[0m19:27:42.814414 [debug] [MainThread]: On master: /* {"app": "dbt", "dbt_version": "1.11.7", "profile_name": "shoesbr", "target_name": "dev", "connection_name": "master"} */
+select distinct
+        dependent_namespace.nspname as dependent_schema,
+        dependent_class.relname as dependent_name,
+        referenced_namespace.nspname as referenced_schema,
+        referenced_class.relname as referenced_name
+
+    -- Query for views: views are entries in pg_class with an entry in pg_rewrite, but we avoid
+    -- a seq scan on pg_rewrite by leveraging the fact there is an "internal" row in pg_depend for
+    -- the view...
+    from pg_class as dependent_class
+    join pg_namespace as dependent_namespace on dependent_namespace.oid = dependent_class.relnamespace
+    join pg_depend as dependent_depend on dependent_depend.refobjid = dependent_class.oid
+        and dependent_depend.classid = 'pg_rewrite'::regclass
+        and dependent_depend.refclassid = 'pg_class'::regclass
+        and dependent_depend.deptype = 'i'
+
+    -- ... and via pg_depend (that has a row per column, hence the need for "distinct" above, and
+    -- making sure to exclude the internal row to avoid a view appearing to depend on itself)...
+    join pg_depend as joining_depend on joining_depend.objid = dependent_depend.objid
+        and joining_depend.classid = 'pg_rewrite'::regclass
+        and joining_depend.refclassid = 'pg_class'::regclass
+        and joining_depend.refobjid != dependent_depend.refobjid
+
+    -- ... we can find the tables they query from in pg_class, but excluding system tables. Note we
+    -- don't need need to exclude _dependent_ system tables, because they only query from other
+    -- system tables, and so are automatically excluded by excluding _referenced_ system tables
+    join pg_class as referenced_class on referenced_class.oid = joining_depend.refobjid
+    join pg_namespace as referenced_namespace on referenced_namespace.oid = referenced_class.relnamespace
+        and referenced_namespace.nspname != 'information_schema'
+        and referenced_namespace.nspname not like 'pg\_%'
+
+    order by
+        dependent_schema, dependent_name, referenced_schema, referenced_name;
+[0m19:27:42.817437 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m19:27:45.015855 [debug] [MainThread]: SQL status: SELECT 24 in 2.199 seconds
+[0m19:27:45.036841 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': 'ef05b839-ba9d-480d-aae7-29e495534bfe', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001FDDFCB7170>]}
+[0m19:27:45.038841 [debug] [MainThread]: On master: ROLLBACK
+[0m19:27:45.188762 [debug] [MainThread]: On master: Close
+[0m19:27:45.198749 [debug] [Thread-1 (]: Began running node model.shoesbr.stg_clientes
+[0m19:27:45.201747 [debug] [Thread-1 (]: Acquiring new postgres connection 'model.shoesbr.stg_clientes'
+[0m19:27:45.202746 [debug] [Thread-1 (]: Began compiling node model.shoesbr.stg_clientes
+[0m19:27:45.237731 [debug] [Thread-1 (]: Writing injected SQL for node "model.shoesbr.stg_clientes"
+[0m19:27:45.244723 [debug] [Thread-1 (]: Began executing node model.shoesbr.stg_clientes
+[0m19:27:45.247723 [debug] [Thread-1 (]: Finished running node model.shoesbr.stg_clientes
+[0m19:27:45.249722 [debug] [Thread-1 (]: Began running node model.shoesbr.stg_produtos
+[0m19:27:45.251721 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly model.shoesbr.stg_clientes, now model.shoesbr.stg_produtos)
+[0m19:27:45.253719 [debug] [Thread-1 (]: Began compiling node model.shoesbr.stg_produtos
+[0m19:27:45.266712 [debug] [Thread-1 (]: Writing injected SQL for node "model.shoesbr.stg_produtos"
+[0m19:27:45.269710 [debug] [Thread-1 (]: Began executing node model.shoesbr.stg_produtos
+[0m19:27:45.272712 [debug] [Thread-1 (]: Finished running node model.shoesbr.stg_produtos
+[0m19:27:45.274708 [debug] [Thread-1 (]: Began running node model.shoesbr.stg_vendas
+[0m19:27:45.276707 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly model.shoesbr.stg_produtos, now model.shoesbr.stg_vendas)
+[0m19:27:45.278705 [debug] [Thread-1 (]: Began compiling node model.shoesbr.stg_vendas
+[0m19:27:45.293695 [debug] [Thread-1 (]: Writing injected SQL for node "model.shoesbr.stg_vendas"
+[0m19:27:45.297694 [debug] [Thread-1 (]: Began executing node model.shoesbr.stg_vendas
+[0m19:27:45.300698 [debug] [Thread-1 (]: Finished running node model.shoesbr.stg_vendas
+[0m19:27:45.303698 [debug] [Thread-1 (]: Began running node seed.shoesbr.estorno
+[0m19:27:45.305693 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly model.shoesbr.stg_vendas, now seed.shoesbr.estorno)
+[0m19:27:45.308693 [debug] [Thread-1 (]: Began compiling node seed.shoesbr.estorno
+[0m19:27:45.319681 [debug] [Thread-1 (]: Began executing node seed.shoesbr.estorno
+[0m19:27:45.323680 [debug] [Thread-1 (]: Finished running node seed.shoesbr.estorno
+[0m19:27:45.325680 [debug] [Thread-1 (]: Began running node test.shoesbr.not_null_stg_clientes_customer_id.455fe7c2cd
+[0m19:27:45.327677 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly seed.shoesbr.estorno, now test.shoesbr.not_null_stg_clientes_customer_id.455fe7c2cd)
+[0m19:27:45.329675 [debug] [Thread-1 (]: Began compiling node test.shoesbr.not_null_stg_clientes_customer_id.455fe7c2cd
+[0m19:27:45.358661 [debug] [Thread-1 (]: Writing injected SQL for node "test.shoesbr.not_null_stg_clientes_customer_id.455fe7c2cd"
+[0m19:27:45.361656 [debug] [Thread-1 (]: Began executing node test.shoesbr.not_null_stg_clientes_customer_id.455fe7c2cd
+[0m19:27:45.365659 [debug] [Thread-1 (]: Finished running node test.shoesbr.not_null_stg_clientes_customer_id.455fe7c2cd
+[0m19:27:45.367656 [debug] [Thread-1 (]: Began running node test.shoesbr.unique_stg_clientes_customer_id.4502584758
+[0m19:27:45.369654 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly test.shoesbr.not_null_stg_clientes_customer_id.455fe7c2cd, now test.shoesbr.unique_stg_clientes_customer_id.4502584758)
+[0m19:27:45.371657 [debug] [Thread-1 (]: Began compiling node test.shoesbr.unique_stg_clientes_customer_id.4502584758
+[0m19:27:45.402636 [debug] [Thread-1 (]: Writing injected SQL for node "test.shoesbr.unique_stg_clientes_customer_id.4502584758"
+[0m19:27:45.406631 [debug] [Thread-1 (]: Began executing node test.shoesbr.unique_stg_clientes_customer_id.4502584758
+[0m19:27:45.410634 [debug] [Thread-1 (]: Finished running node test.shoesbr.unique_stg_clientes_customer_id.4502584758
+[0m19:27:45.412630 [debug] [Thread-1 (]: Began running node test.shoesbr.not_null_stg_produtos_product_id.cb2e495773
+[0m19:27:45.414627 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly test.shoesbr.unique_stg_clientes_customer_id.4502584758, now test.shoesbr.not_null_stg_produtos_product_id.cb2e495773)
+[0m19:27:45.416631 [debug] [Thread-1 (]: Began compiling node test.shoesbr.not_null_stg_produtos_product_id.cb2e495773
+[0m19:27:45.434616 [debug] [Thread-1 (]: Writing injected SQL for node "test.shoesbr.not_null_stg_produtos_product_id.cb2e495773"
+[0m19:27:45.438612 [debug] [Thread-1 (]: Began executing node test.shoesbr.not_null_stg_produtos_product_id.cb2e495773
+[0m19:27:45.442611 [debug] [Thread-1 (]: Finished running node test.shoesbr.not_null_stg_produtos_product_id.cb2e495773
+[0m19:27:45.444610 [debug] [Thread-1 (]: Began running node test.shoesbr.unique_stg_produtos_product_id.478a2f9896
+[0m19:27:45.447611 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly test.shoesbr.not_null_stg_produtos_product_id.cb2e495773, now test.shoesbr.unique_stg_produtos_product_id.478a2f9896)
+[0m19:27:45.448608 [debug] [Thread-1 (]: Began compiling node test.shoesbr.unique_stg_produtos_product_id.478a2f9896
+[0m19:27:45.463600 [debug] [Thread-1 (]: Writing injected SQL for node "test.shoesbr.unique_stg_produtos_product_id.478a2f9896"
+[0m19:27:45.465950 [debug] [Thread-1 (]: Began executing node test.shoesbr.unique_stg_produtos_product_id.478a2f9896
+[0m19:27:45.465950 [debug] [Thread-1 (]: Finished running node test.shoesbr.unique_stg_produtos_product_id.478a2f9896
+[0m19:27:45.465950 [debug] [Thread-1 (]: Began running node model.shoesbr.int_clientes
+[0m19:27:45.465950 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly test.shoesbr.unique_stg_produtos_product_id.478a2f9896, now model.shoesbr.int_clientes)
+[0m19:27:45.465950 [debug] [Thread-1 (]: Began compiling node model.shoesbr.int_clientes
+[0m19:27:45.481575 [debug] [Thread-1 (]: Writing injected SQL for node "model.shoesbr.int_clientes"
+[0m19:27:45.481575 [debug] [Thread-1 (]: Began executing node model.shoesbr.int_clientes
+[0m19:27:45.481575 [debug] [Thread-1 (]: Finished running node model.shoesbr.int_clientes
+[0m19:27:45.481575 [debug] [Thread-1 (]: Began running node model.shoesbr.int_produtos
+[0m19:27:45.497202 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly model.shoesbr.int_clientes, now model.shoesbr.int_produtos)
+[0m19:27:45.497202 [debug] [Thread-1 (]: Began compiling node model.shoesbr.int_produtos
+[0m19:27:45.512827 [debug] [Thread-1 (]: Writing injected SQL for node "model.shoesbr.int_produtos"
+[0m19:27:45.512827 [debug] [Thread-1 (]: Began executing node model.shoesbr.int_produtos
+[0m19:27:45.512827 [debug] [Thread-1 (]: Finished running node model.shoesbr.int_produtos
+[0m19:27:45.512827 [debug] [Thread-1 (]: Began running node test.shoesbr.not_null_stg_vendas_customer_id.26b71c4d9c
+[0m19:27:45.512827 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly model.shoesbr.int_produtos, now test.shoesbr.not_null_stg_vendas_customer_id.26b71c4d9c)
+[0m19:27:45.512827 [debug] [Thread-1 (]: Began compiling node test.shoesbr.not_null_stg_vendas_customer_id.26b71c4d9c
+[0m19:27:45.539627 [debug] [Thread-1 (]: Writing injected SQL for node "test.shoesbr.not_null_stg_vendas_customer_id.26b71c4d9c"
+[0m19:27:45.543625 [debug] [Thread-1 (]: Began executing node test.shoesbr.not_null_stg_vendas_customer_id.26b71c4d9c
+[0m19:27:45.546629 [debug] [Thread-1 (]: Finished running node test.shoesbr.not_null_stg_vendas_customer_id.26b71c4d9c
+[0m19:27:45.549623 [debug] [Thread-1 (]: Began running node test.shoesbr.not_null_stg_vendas_product_id.05982355e4
+[0m19:27:45.551621 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly test.shoesbr.not_null_stg_vendas_customer_id.26b71c4d9c, now test.shoesbr.not_null_stg_vendas_product_id.05982355e4)
+[0m19:27:45.553621 [debug] [Thread-1 (]: Began compiling node test.shoesbr.not_null_stg_vendas_product_id.05982355e4
+[0m19:27:45.582608 [debug] [Thread-1 (]: Writing injected SQL for node "test.shoesbr.not_null_stg_vendas_product_id.05982355e4"
+[0m19:27:45.586600 [debug] [Thread-1 (]: Began executing node test.shoesbr.not_null_stg_vendas_product_id.05982355e4
+[0m19:27:45.591598 [debug] [Thread-1 (]: Finished running node test.shoesbr.not_null_stg_vendas_product_id.05982355e4
+[0m19:27:45.592597 [debug] [Thread-1 (]: Began running node test.shoesbr.not_null_stg_vendas_purchase_id.017ace8778
+[0m19:27:45.595597 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly test.shoesbr.not_null_stg_vendas_product_id.05982355e4, now test.shoesbr.not_null_stg_vendas_purchase_id.017ace8778)
+[0m19:27:45.597597 [debug] [Thread-1 (]: Began compiling node test.shoesbr.not_null_stg_vendas_purchase_id.017ace8778
+[0m19:27:45.618585 [debug] [Thread-1 (]: Writing injected SQL for node "test.shoesbr.not_null_stg_vendas_purchase_id.017ace8778"
+[0m19:27:45.622578 [debug] [Thread-1 (]: Began executing node test.shoesbr.not_null_stg_vendas_purchase_id.017ace8778
+[0m19:27:45.626578 [debug] [Thread-1 (]: Finished running node test.shoesbr.not_null_stg_vendas_purchase_id.017ace8778
+[0m19:27:45.628578 [debug] [Thread-1 (]: Began running node test.shoesbr.relationships_stg_vendas_customer_id__customer_id__ref_stg_clientes_.5f6facf66a
+[0m19:27:45.630575 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly test.shoesbr.not_null_stg_vendas_purchase_id.017ace8778, now test.shoesbr.relationships_stg_vendas_customer_id__customer_id__ref_stg_clientes_.5f6facf66a)
+[0m19:27:45.632576 [debug] [Thread-1 (]: Began compiling node test.shoesbr.relationships_stg_vendas_customer_id__customer_id__ref_stg_clientes_.5f6facf66a
+[0m19:27:45.651564 [debug] [Thread-1 (]: Writing injected SQL for node "test.shoesbr.relationships_stg_vendas_customer_id__customer_id__ref_stg_clientes_.5f6facf66a"
+[0m19:27:45.655560 [debug] [Thread-1 (]: Began executing node test.shoesbr.relationships_stg_vendas_customer_id__customer_id__ref_stg_clientes_.5f6facf66a
+[0m19:27:45.659559 [debug] [Thread-1 (]: Finished running node test.shoesbr.relationships_stg_vendas_customer_id__customer_id__ref_stg_clientes_.5f6facf66a
+[0m19:27:45.661564 [debug] [Thread-1 (]: Began running node test.shoesbr.relationships_stg_vendas_product_id__product_id__ref_stg_produtos_.1ff89a1ffb
+[0m19:27:45.663555 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly test.shoesbr.relationships_stg_vendas_customer_id__customer_id__ref_stg_clientes_.5f6facf66a, now test.shoesbr.relationships_stg_vendas_product_id__product_id__ref_stg_produtos_.1ff89a1ffb)
+[0m19:27:45.665555 [debug] [Thread-1 (]: Began compiling node test.shoesbr.relationships_stg_vendas_product_id__product_id__ref_stg_produtos_.1ff89a1ffb
+[0m19:27:45.687547 [debug] [Thread-1 (]: Writing injected SQL for node "test.shoesbr.relationships_stg_vendas_product_id__product_id__ref_stg_produtos_.1ff89a1ffb"
+[0m19:27:45.690543 [debug] [Thread-1 (]: Began executing node test.shoesbr.relationships_stg_vendas_product_id__product_id__ref_stg_produtos_.1ff89a1ffb
+[0m19:27:45.693543 [debug] [Thread-1 (]: Finished running node test.shoesbr.relationships_stg_vendas_product_id__product_id__ref_stg_produtos_.1ff89a1ffb
+[0m19:27:45.695542 [debug] [Thread-1 (]: Began running node test.shoesbr.unique_stg_vendas_purchase_id.1b7f8e5d19
+[0m19:27:45.697541 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly test.shoesbr.relationships_stg_vendas_product_id__product_id__ref_stg_produtos_.1ff89a1ffb, now test.shoesbr.unique_stg_vendas_purchase_id.1b7f8e5d19)
+[0m19:27:45.699536 [debug] [Thread-1 (]: Began compiling node test.shoesbr.unique_stg_vendas_purchase_id.1b7f8e5d19
+[0m19:27:45.711530 [debug] [Thread-1 (]: Writing injected SQL for node "test.shoesbr.unique_stg_vendas_purchase_id.1b7f8e5d19"
+[0m19:27:45.715528 [debug] [Thread-1 (]: Began executing node test.shoesbr.unique_stg_vendas_purchase_id.1b7f8e5d19
+[0m19:27:45.719524 [debug] [Thread-1 (]: Finished running node test.shoesbr.unique_stg_vendas_purchase_id.1b7f8e5d19
+[0m19:27:45.721524 [debug] [Thread-1 (]: Began running node model.shoesbr.stg_estorno
+[0m19:27:45.723526 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly test.shoesbr.unique_stg_vendas_purchase_id.1b7f8e5d19, now model.shoesbr.stg_estorno)
+[0m19:27:45.725527 [debug] [Thread-1 (]: Began compiling node model.shoesbr.stg_estorno
+[0m19:27:45.750514 [debug] [Thread-1 (]: Writing injected SQL for node "model.shoesbr.stg_estorno"
+[0m19:27:45.754503 [debug] [Thread-1 (]: Began executing node model.shoesbr.stg_estorno
+[0m19:27:45.757503 [debug] [Thread-1 (]: Finished running node model.shoesbr.stg_estorno
+[0m19:27:45.759501 [debug] [Thread-1 (]: Began running node model.shoesbr.int_estorno
+[0m19:27:45.761502 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly model.shoesbr.stg_estorno, now model.shoesbr.int_estorno)
+[0m19:27:45.764500 [debug] [Thread-1 (]: Began compiling node model.shoesbr.int_estorno
+[0m19:27:45.778490 [debug] [Thread-1 (]: Writing injected SQL for node "model.shoesbr.int_estorno"
+[0m19:27:45.781488 [debug] [Thread-1 (]: Began executing node model.shoesbr.int_estorno
+[0m19:27:45.784491 [debug] [Thread-1 (]: Finished running node model.shoesbr.int_estorno
+[0m19:27:45.786486 [debug] [Thread-1 (]: Began running node model.shoesbr.int_vendas
+[0m19:27:45.788485 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly model.shoesbr.int_estorno, now model.shoesbr.int_vendas)
+[0m19:27:45.790489 [debug] [Thread-1 (]: Began compiling node model.shoesbr.int_vendas
+[0m19:27:45.804478 [debug] [Thread-1 (]: Writing injected SQL for node "model.shoesbr.int_vendas"
+[0m19:27:45.807474 [debug] [Thread-1 (]: Began executing node model.shoesbr.int_vendas
+[0m19:27:45.810473 [debug] [Thread-1 (]: Finished running node model.shoesbr.int_vendas
+[0m19:27:45.812471 [debug] [Thread-1 (]: Began running node test.shoesbr.accepted_values_stg_estorno_refund_reason__Produto_com_defeito__Arrependimento__Entrega_Atrasada__Produto_Incorreto.323ea2430b
+[0m19:27:45.814471 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly model.shoesbr.int_vendas, now test.shoesbr.accepted_values_stg_estorno_refund_reason__Produto_com_defeito__Arrependimento__Entrega_Atrasada__Produto_Incorreto.323ea2430b)
+[0m19:27:45.816470 [debug] [Thread-1 (]: Began compiling node test.shoesbr.accepted_values_stg_estorno_refund_reason__Produto_com_defeito__Arrependimento__Entrega_Atrasada__Produto_Incorreto.323ea2430b
+[0m19:27:45.834461 [debug] [Thread-1 (]: Writing injected SQL for node "test.shoesbr.accepted_values_stg_estorno_refund_reason__Produto_com_defeito__Arrependimento__Entrega_Atrasada__Produto_Incorreto.323ea2430b"
+[0m19:27:45.838455 [debug] [Thread-1 (]: Began executing node test.shoesbr.accepted_values_stg_estorno_refund_reason__Produto_com_defeito__Arrependimento__Entrega_Atrasada__Produto_Incorreto.323ea2430b
+[0m19:27:45.841460 [debug] [Thread-1 (]: Finished running node test.shoesbr.accepted_values_stg_estorno_refund_reason__Produto_com_defeito__Arrependimento__Entrega_Atrasada__Produto_Incorreto.323ea2430b
+[0m19:27:45.843456 [debug] [Thread-1 (]: Began running node test.shoesbr.relationships_stg_estorno_customer_id__customer_id__ref_stg_clientes_.ea284c6ec6
+[0m19:27:45.845452 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly test.shoesbr.accepted_values_stg_estorno_refund_reason__Produto_com_defeito__Arrependimento__Entrega_Atrasada__Produto_Incorreto.323ea2430b, now test.shoesbr.relationships_stg_estorno_customer_id__customer_id__ref_stg_clientes_.ea284c6ec6)
+[0m19:27:45.847451 [debug] [Thread-1 (]: Began compiling node test.shoesbr.relationships_stg_estorno_customer_id__customer_id__ref_stg_clientes_.ea284c6ec6
+[0m19:27:45.872437 [debug] [Thread-1 (]: Writing injected SQL for node "test.shoesbr.relationships_stg_estorno_customer_id__customer_id__ref_stg_clientes_.ea284c6ec6"
+[0m19:27:45.876435 [debug] [Thread-1 (]: Began executing node test.shoesbr.relationships_stg_estorno_customer_id__customer_id__ref_stg_clientes_.ea284c6ec6
+[0m19:27:45.879436 [debug] [Thread-1 (]: Finished running node test.shoesbr.relationships_stg_estorno_customer_id__customer_id__ref_stg_clientes_.ea284c6ec6
+[0m19:27:45.881438 [debug] [Thread-1 (]: Began running node test.shoesbr.relationships_stg_estorno_product_id__product_id__ref_stg_produtos_.d796ad7361
+[0m19:27:45.884433 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly test.shoesbr.relationships_stg_estorno_customer_id__customer_id__ref_stg_clientes_.ea284c6ec6, now test.shoesbr.relationships_stg_estorno_product_id__product_id__ref_stg_produtos_.d796ad7361)
+[0m19:27:45.885431 [debug] [Thread-1 (]: Began compiling node test.shoesbr.relationships_stg_estorno_product_id__product_id__ref_stg_produtos_.d796ad7361
+[0m19:27:45.916411 [debug] [Thread-1 (]: Writing injected SQL for node "test.shoesbr.relationships_stg_estorno_product_id__product_id__ref_stg_produtos_.d796ad7361"
+[0m19:27:45.923408 [debug] [Thread-1 (]: Began executing node test.shoesbr.relationships_stg_estorno_product_id__product_id__ref_stg_produtos_.d796ad7361
+[0m19:27:45.928404 [debug] [Thread-1 (]: Finished running node test.shoesbr.relationships_stg_estorno_product_id__product_id__ref_stg_produtos_.d796ad7361
+[0m19:27:45.930404 [debug] [Thread-1 (]: Began running node test.shoesbr.relationships_stg_estorno_purchase_id__purchase_id__ref_stg_vendas_.0b57cd4ef9
+[0m19:27:45.933401 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly test.shoesbr.relationships_stg_estorno_product_id__product_id__ref_stg_produtos_.d796ad7361, now test.shoesbr.relationships_stg_estorno_purchase_id__purchase_id__ref_stg_vendas_.0b57cd4ef9)
+[0m19:27:45.936399 [debug] [Thread-1 (]: Began compiling node test.shoesbr.relationships_stg_estorno_purchase_id__purchase_id__ref_stg_vendas_.0b57cd4ef9
+[0m19:27:46.125838 [debug] [Thread-1 (]: Writing injected SQL for node "test.shoesbr.relationships_stg_estorno_purchase_id__purchase_id__ref_stg_vendas_.0b57cd4ef9"
+[0m19:27:46.129829 [debug] [Thread-1 (]: Began executing node test.shoesbr.relationships_stg_estorno_purchase_id__purchase_id__ref_stg_vendas_.0b57cd4ef9
+[0m19:27:46.132831 [debug] [Thread-1 (]: Finished running node test.shoesbr.relationships_stg_estorno_purchase_id__purchase_id__ref_stg_vendas_.0b57cd4ef9
+[0m19:27:46.133826 [debug] [Thread-1 (]: Began running node model.shoesbr.dim_clientes
+[0m19:27:46.135825 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly test.shoesbr.relationships_stg_estorno_purchase_id__purchase_id__ref_stg_vendas_.0b57cd4ef9, now model.shoesbr.dim_clientes)
+[0m19:27:46.137825 [debug] [Thread-1 (]: Began compiling node model.shoesbr.dim_clientes
+[0m19:27:46.147820 [debug] [Thread-1 (]: Writing injected SQL for node "model.shoesbr.dim_clientes"
+[0m19:27:46.152816 [debug] [Thread-1 (]: Began executing node model.shoesbr.dim_clientes
+[0m19:27:46.155818 [debug] [Thread-1 (]: Finished running node model.shoesbr.dim_clientes
+[0m19:27:46.157813 [debug] [Thread-1 (]: Began running node model.shoesbr.dim_produtos
+[0m19:27:46.159810 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly model.shoesbr.dim_clientes, now model.shoesbr.dim_produtos)
+[0m19:27:46.160812 [debug] [Thread-1 (]: Began compiling node model.shoesbr.dim_produtos
+[0m19:27:46.170805 [debug] [Thread-1 (]: Writing injected SQL for node "model.shoesbr.dim_produtos"
+[0m19:27:46.173804 [debug] [Thread-1 (]: Began executing node model.shoesbr.dim_produtos
+[0m19:27:46.176810 [debug] [Thread-1 (]: Finished running node model.shoesbr.dim_produtos
+[0m19:27:46.178800 [debug] [Thread-1 (]: Began running node model.shoesbr.fct_vendas
+[0m19:27:46.180801 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly model.shoesbr.dim_produtos, now model.shoesbr.fct_vendas)
+[0m19:27:46.181803 [debug] [Thread-1 (]: Began compiling node model.shoesbr.fct_vendas
+[0m19:27:46.194794 [debug] [Thread-1 (]: Writing injected SQL for node "model.shoesbr.fct_vendas"
+[0m19:27:46.198789 [debug] [Thread-1 (]: Began executing node model.shoesbr.fct_vendas
+[0m19:27:46.201793 [debug] [Thread-1 (]: Finished running node model.shoesbr.fct_vendas
+[0m19:27:46.204784 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m19:27:46.206783 [debug] [MainThread]: Connection 'list_shoesBR_intermediate' was properly closed.
+[0m19:27:46.207782 [debug] [MainThread]: Connection 'model.shoesbr.fct_vendas' was properly closed.
+[0m19:27:46.223776 [debug] [MainThread]: Command end result
+[0m19:27:46.647581 [debug] [MainThread]: Wrote artifact WritableManifest to C:\Users\fdani\project_shoesbr\target\manifest.json
+[0m19:27:46.656568 [debug] [MainThread]: Wrote artifact SemanticManifest to C:\Users\fdani\project_shoesbr\target\semantic_manifest.json
+[0m19:27:46.678563 [debug] [MainThread]: Wrote artifact RunExecutionResult to C:\Users\fdani\project_shoesbr\target\run_results.json
+[0m19:27:46.685553 [debug] [MainThread]: Acquiring new postgres connection 'generate_catalog'
+[0m19:27:46.686556 [info ] [MainThread]: Building catalog
+[0m19:27:46.724532 [debug] [ThreadPool]: Acquiring new postgres connection 'shoesBR.information_schema'
+[0m19:27:46.756516 [debug] [ThreadPool]: Using postgres connection "shoesBR.information_schema"
+[0m19:27:46.757516 [debug] [ThreadPool]: On shoesBR.information_schema: /* {"app": "dbt", "dbt_version": "1.11.7", "profile_name": "shoesbr", "target_name": "dev", "connection_name": "shoesBR.information_schema"} */
+
+    
+    
+
+    select
+        'shoesBR' as table_database,
+        sch.nspname as table_schema,
+        tbl.relname as table_name,
+        case tbl.relkind
+            when 'v' then 'VIEW'
+            when 'm' then 'MATERIALIZED VIEW'
+            else 'BASE TABLE'
+        end as table_type,
+        tbl_desc.description as table_comment,
+        col.attname as column_name,
+        col.attnum as column_index,
+        pg_catalog.format_type(col.atttypid, col.atttypmod) as column_type,
+        col_desc.description as column_comment,
+        pg_get_userbyid(tbl.relowner) as table_owner
+
+    from pg_catalog.pg_namespace sch
+    join pg_catalog.pg_class tbl on tbl.relnamespace = sch.oid
+    join pg_catalog.pg_attribute col on col.attrelid = tbl.oid
+    left outer join pg_catalog.pg_description tbl_desc on (tbl_desc.objoid = tbl.oid and tbl_desc.objsubid = 0)
+    left outer join pg_catalog.pg_description col_desc on (col_desc.objoid = tbl.oid and col_desc.objsubid = col.attnum)
+    where ((upper(sch.nspname) = upper('landing') and
+           upper(tbl.relname) = upper('vendas')) or (upper(sch.nspname) = upper('intermediate') and
+           upper(tbl.relname) = upper('int_vendas')) or (upper(sch.nspname) = upper('staging') and
+           upper(tbl.relname) = upper('stg_clientes')) or (upper(sch.nspname) = upper('landing') and
+           upper(tbl.relname) = upper('produtos')) or (upper(sch.nspname) = upper('landing') and
+           upper(tbl.relname) = upper('clientes')) or (upper(sch.nspname) = upper('intermediate') and
+           upper(tbl.relname) = upper('int_clientes')) or (upper(sch.nspname) = upper('marts') and
+           upper(tbl.relname) = upper('fct_vendas')) or (upper(sch.nspname) = upper('marts') and
+           upper(tbl.relname) = upper('dim_produtos')) or (upper(sch.nspname) = upper('marts') and
+           upper(tbl.relname) = upper('dim_clientes')) or (upper(sch.nspname) = upper('staging') and
+           upper(tbl.relname) = upper('stg_vendas')) or (upper(sch.nspname) = upper('staging') and
+           upper(tbl.relname) = upper('stg_estorno')) or (upper(sch.nspname) = upper('intermediate') and
+           upper(tbl.relname) = upper('int_produtos')) or (upper(sch.nspname) = upper('intermediate') and
+           upper(tbl.relname) = upper('int_estorno')) or (upper(sch.nspname) = upper('staging') and
+           upper(tbl.relname) = upper('stg_produtos')) or (upper(sch.nspname) = upper('landing') and
+           upper(tbl.relname) = upper('estorno')))
+      and not pg_is_other_temp_schema(sch.oid) -- not a temporary schema belonging to another session
+      and tbl.relpersistence in ('p', 'u') -- [p]ermanent table or [u]nlogged table. Exclude [t]emporary tables
+      and tbl.relkind in ('r', 'v', 'f', 'p', 'm') -- o[r]dinary table, [v]iew, [f]oreign table, [p]artitioned table, [m]aterialized view. Other values are [i]ndex, [S]equence, [c]omposite type, [t]OAST table
+      and col.attnum > 0 -- negative numbers are used for system columns such as oid
+      and not col.attisdropped -- column as not been dropped
+
+    order by
+        sch.nspname,
+        tbl.relname,
+        col.attnum
+[0m19:27:46.759516 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m19:27:48.201575 [debug] [ThreadPool]: SQL status: SELECT 100 in 1.442 seconds
+[0m19:27:48.221563 [debug] [ThreadPool]: On shoesBR.information_schema: ROLLBACK
+[0m19:27:48.367879 [debug] [ThreadPool]: On shoesBR.information_schema: Close
+[0m19:27:48.420823 [debug] [MainThread]: Wrote artifact CatalogArtifact to C:\Users\fdani\project_shoesbr\target\catalog.json
+[0m19:27:48.556748 [debug] [MainThread]: Wrote artifact WritableManifest to C:\Users\fdani\project_shoesbr\target\manifest.json
+[0m19:27:48.566743 [debug] [MainThread]: Wrote artifact SemanticManifest to C:\Users\fdani\project_shoesbr\target\semantic_manifest.json
+[0m19:27:48.567739 [info ] [MainThread]: Catalog written to C:\Users\fdani\project_shoesbr\target\catalog.json
+[0m19:27:48.570737 [warn ] [MainThread]: [[33mWARNING[0m][DeprecationsSummary]: Deprecated functionality
+Summary of encountered deprecations:
+- MissingArgumentsPropertyInGenericTestDeprecation: 1 occurrence
+To see all deprecation instances instead of just the first occurrence of each,
+run command again with the `--show-all-deprecations` flag. You may also need to
+run with `--no-partial-parse` as some deprecations are only encountered during
+parsing.
+[0m19:27:48.575733 [debug] [MainThread]: Command `dbt docs generate` succeeded at 19:27:48.574734 after 22.17 seconds
+[0m19:27:48.576734 [debug] [MainThread]: Connection 'generate_catalog' was properly closed.
+[0m19:27:48.578731 [debug] [MainThread]: Connection 'shoesBR.information_schema' was properly closed.
+[0m19:27:48.579731 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001FDDE6F8C80>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001FDDE118A10>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001FDDE1185F0>]}
+[0m19:27:48.581730 [debug] [MainThread]: Flushing usage events
+[0m19:27:51.074879 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m19:28:05.050328 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000013D37C24740>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000013D3AA09130>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000013D3AA09070>]}
+
+
+============================== 19:28:05.070319 | c3298c0c-0017-476e-bdb1-3f28c9197e0c ==============================
+[0m19:28:05.070319 [info ] [MainThread]: Running with dbt=1.11.7
+[0m19:28:05.073316 [debug] [MainThread]: running dbt with arguments {'static_parser': 'True', 'no_print': 'None', 'version_check': 'True', 'target_path': 'None', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'printer_width': '80', 'write_json': 'True', 'introspect': 'True', 'log_cache_events': 'False', 'empty': 'None', 'cache_selected_only': 'False', 'log_format': 'default', 'debug': 'False', 'fail_fast': 'False', 'profiles_dir': 'C:\\Users\\fdani\\.dbt', 'send_anonymous_usage_stats': 'True', 'quiet': 'False', 'warn_error': 'None', 'partial_parse': 'True', 'invocation_command': 'dbt docs serve', 'indirect_selection': 'eager', 'use_colors': 'True', 'use_experimental_parser': 'False', 'log_path': 'C:\\Users\\fdani\\project_shoesbr\\logs'}
+[0m19:28:05.945680 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': 'c3298c0c-0017-476e-bdb1-3f28c9197e0c', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000013D3C0CDB50>]}
+[0m19:28:06.207527 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': 'c3298c0c-0017-476e-bdb1-3f28c9197e0c', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000013D398F40B0>]}
+[0m19:30:54.880423 [error] [MainThread]: Encountered an error:
+
+[0m19:30:55.104295 [error] [MainThread]: Traceback (most recent call last):
+  File "C:\Users\fdani\project_shoesbr\.venv\Lib\site-packages\dbt\cli\requires.py", line 182, in wrapper
+    result, success = func(*args, **kwargs)
+                      ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\fdani\project_shoesbr\.venv\Lib\site-packages\dbt\cli\requires.py", line 128, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\fdani\project_shoesbr\.venv\Lib\site-packages\dbt\cli\requires.py", line 276, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\fdani\project_shoesbr\.venv\Lib\site-packages\dbt\cli\requires.py", line 321, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\fdani\project_shoesbr\.venv\Lib\site-packages\dbt\cli\requires.py", line 368, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\fdani\project_shoesbr\.venv\Lib\site-packages\dbt\cli\main.py", line 307, in docs_serve
+    results = task.run()
+              ^^^^^^^^^^
+  File "C:\Users\fdani\project_shoesbr\.venv\Lib\site-packages\dbt\task\docs\serve.py", line 29, in run
+    httpd.serve_forever()
+  File "C:\Users\fdani\AppData\Local\Programs\Python\Python312\Lib\socketserver.py", line 240, in serve_forever
+    self._handle_request_noblock()
+  File "C:\Users\fdani\AppData\Local\Programs\Python\Python312\Lib\socketserver.py", line 318, in _handle_request_noblock
+    self.process_request(request, client_address)
+  File "C:\Users\fdani\AppData\Local\Programs\Python\Python312\Lib\socketserver.py", line 349, in process_request
+    self.finish_request(request, client_address)
+  File "C:\Users\fdani\AppData\Local\Programs\Python\Python312\Lib\socketserver.py", line 362, in finish_request
+    self.RequestHandlerClass(request, client_address, self)
+  File "C:\Users\fdani\AppData\Local\Programs\Python\Python312\Lib\http\server.py", line 672, in __init__
+    super().__init__(*args, **kwargs)
+  File "C:\Users\fdani\AppData\Local\Programs\Python\Python312\Lib\socketserver.py", line 766, in __init__
+    self.handle()
+  File "C:\Users\fdani\AppData\Local\Programs\Python\Python312\Lib\http\server.py", line 436, in handle
+    self.handle_one_request()
+  File "C:\Users\fdani\AppData\Local\Programs\Python\Python312\Lib\http\server.py", line 404, in handle_one_request
+    self.raw_requestline = self.rfile.readline(65537)
+                           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\fdani\AppData\Local\Programs\Python\Python312\Lib\socket.py", line 720, in readinto
+    return self._sock.recv_into(b)
+           ^^^^^^^^^^^^^^^^^^^^^^^
+KeyboardInterrupt
+
+[0m19:30:55.137276 [debug] [MainThread]: Command `dbt docs serve` failed at 19:30:55.136276 after 170.51 seconds
+[0m19:30:55.139276 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000013D3AD02F30>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000013D3AF1DE20>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000013D3C0BF620>]}
+[0m19:30:55.142274 [debug] [MainThread]: Flushing usage events
+[0m19:30:57.719183 [debug] [MainThread]: An error was encountered while trying to flush usage events
+>>>>>>> dev

@@ -2,7 +2,12 @@ version: 2
 
 models:
   - name: fct_vendas
-    description: "Tabela fato de vendas com informações de clientes, produtos e estornos"
+    description: |
+      Tabela fato de vendas com informações de clientes, produtos e estornos
+      ## 💳 Top 5 Receita Líquida por Produto e Método de Pagamento
+
+      ![Top Receita Líquida](/images/top5_receita_liquida_produto_pagamento.png)
+
     columns:
       - name: purchase_id
         description: "Identificador único da compra"
