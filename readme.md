@@ -96,12 +96,11 @@ shoesbr/
 │   ├── analises_produtos.py
 │   └── analises_receita.py
 │
-├── assets/
-│   └── charts/
-│       ├── top_clientes_total_gasto.png
-│       ├── top_produtos_faturamento.png
-│       └── top5_receita_liquida_produto_pagamento.png
 ├── docs/
+|     └──images/
+|          └── top_clientes_total_gasto.png
+│          ├── top_produtos_faturamento.png
+│          └── top5_receita_liquida_produto_pagamento.png
 |     └── models/
 |           └── generate_schema_name.md
 |           └── homepage.md
