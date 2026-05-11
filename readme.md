@@ -499,7 +499,7 @@ O projeto **ShoesBR** segue um processo contínuo de evolução, versionamento e
 |---|---|
 | `v1.0.0` | Estrutura inicial do projeto dbt, modelagem analítica, documentação e integração com GitHub |
 | `v1.1.0` | Implementação da orquestração automatizada com dbt Cloud, execução de jobs, testes e geração automática de documentação |
-
+| `v1.2.0` | Implementação da camada Analytics Engineering com Python, SQLAlchemy, Pandas, Matplotlib e visualização gráfica das métricas de negócio |
 ---
 
 ## 🚀 Evolução do Projeto
