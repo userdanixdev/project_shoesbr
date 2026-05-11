@@ -450,13 +450,13 @@ Os modelos estão separados por áreas de negócio:
 
 O gráfico apresenta os clientes com maior volume financeiro no e-commerce.
 
-![Top Clientes](assets/charts/top_clientes_total_gasto.png)
+![Top Clientes](docs/images/top_clientes_total_gasto.png)
 
 ### 📦 Top 10 Produtos por Total Faturado
 
 Visualização dos produtos com maior faturamento total.
 
-![Top Produtos](assets/charts/top_produtos_faturamento.png)
+![Top Produtos](docs/images/top_produtos_faturamento.png)
 
 ### 💳 Top 5 Receita Líquida por Produto e Método de Pagamento
 
@@ -466,7 +466,7 @@ Produto
 Método de pagamento
 Receita líquida
 
-![Top Receita Líquida](assets/charts/top5_receita_liquida_produto_pagamento.png)
+![Top Receita Líquida](docs/images/top5_receita_liquida_produto_pagamento.png)
 
 ## 💡 Aprendizados
 
@@ -485,8 +485,6 @@ Este projeto foi desenvolvido com foco em aprendizado prático de:
 * Transformações com dbt
 * Modelagem analítica
 * Qualidade de dados
-
----
 
 ---
 
