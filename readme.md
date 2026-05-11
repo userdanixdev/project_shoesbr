@@ -71,7 +71,6 @@ Esse arquivo é responsável por:
 - Organizar arquitetura
 
 
-
 ### 🔹 **Camada Staging (`stg_`)**
 
 * Testes e padronização dos dados mínimos.
@@ -92,6 +91,16 @@ Modelos:
 ```
 shoesbr/
 │
+├── analyses/
+│   ├── analises_clientes.py
+│   ├── analises_produtos.py
+│   └── analises_receita.py
+│
+├── assets/
+│   └── charts/
+│       ├── top_clientes_total_gasto.png
+│       ├── top_produtos_faturamento.png
+│       └── top5_receita_liquida_produto_pagamento.png
 ├── docs/
 |     └── models/
 |           └── generate_schema_name.md
@@ -140,6 +149,11 @@ shoesbr/
 
 ## ⚙️ Tecnologias Utilizadas
 
+* **Python**
+* **SQLAlchemy**
+* **Pandas**
+* **Matplotlib**
+* **dotenv**
 * **dbt Core**
 * **dbt Cloud**
 * **PostgreSQL (AWS RDS)**
@@ -148,6 +162,12 @@ shoesbr/
 * **DBeaver**
 
 ---
+
+### Segurança das Credenciais
+
+As credenciais do banco foram protegidas utilizando variáveis de ambiente.
+
+>O arquivo .env foi adicionado ao .gitignore para impedir o versionamento de informações sensíveis.
 
 ### Criação, Visualização e Exploração de Dados
 
@@ -425,6 +445,29 @@ Os modelos estão separados por áreas de negócio:
 > Melhora escalabilidade e organização do projeto.
 
 ---
+
+## Gráficos Implementados
+### 📈 Top 10 Clientes por Total Gasto
+
+O gráfico apresenta os clientes com maior volume financeiro no e-commerce.
+
+![Top Clientes](assets/charts/top_clientes_total_gasto.png)
+
+### 📦 Top 10 Produtos por Total Faturado
+
+Visualização dos produtos com maior faturamento total.
+
+![Top Produtos](assets/charts/top_produtos_faturamento.png)
+
+### 💳 Top 5 Receita Líquida por Produto e Método de Pagamento
+
+Análise cruzando:
+
+Produto
+Método de pagamento
+Receita líquida
+
+![Top Receita Líquida](assets/charts/top5_receita_liquida_produto_pagamento.png)
 
 ## 💡 Aprendizados
 

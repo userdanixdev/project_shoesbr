@@ -2,7 +2,11 @@ version: 2
 
 models:
   - name: dim_clientes
-    description: "Dimensão analítica com dados do cliente e métricas de compra"
+    description: |
+      Dimensão analítica com dados do cliente e métricas de compra
+      ## 📊 Top 10 Clientes por Total Gasto
+
+      ![Top Clientes](/images/top_clientes_total_gasto.png)
     columns:
       - name: customer_id
         description: "Identificador do cliente"
@@ -22,9 +26,15 @@ models:
         description: "Quantidade de produtos distintos comprados"
       - name: total_estornos
         description: "Quantidade de compras estornadas"
+        
 
   - name: dim_produtos
-    description: "Dimensão analítica com dados de produtos e indicadores de desempenho"
+    description: |
+      Dimensão analítica com dados de produtos e indicadores de desempenho
+       ## 📦 Top 10 Produtos por Total Faturado
+
+      ![Top Produtos](/images/top_produtos_faturamento.png)
+
     columns:
       - name: product_id
         description: "Identificador do produto"
